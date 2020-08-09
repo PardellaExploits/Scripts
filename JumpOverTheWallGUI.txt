@@ -1,0 +1,269 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local JumpOverWallsGUI = Instance.new("ScreenGui")
+local Exploit = Instance.new("Frame")
+local JumpOverWallsTitle = Instance.new("TextLabel")
+local MadeByTitle = Instance.new("TextLabel")
+local GetAllBadges = Instance.new("TextButton")
+
+--Properties:
+
+JumpOverWallsGUI.Name = "JumpOverWallsGUI"
+JumpOverWallsGUI.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+JumpOverWallsGUI.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Exploit.Name = "Exploit"
+Exploit.Parent = JumpOverWallsGUI
+Exploit.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Exploit.Position = UDim2.new(0.0608294941, 0, 0.166915059, 0)
+Exploit.Size = UDim2.new(0, 514, 0, 330)
+Exploit.Style = Enum.FrameStyle.RobloxRound
+
+JumpOverWallsTitle.Name = "JumpOverWallsTitle"
+JumpOverWallsTitle.Parent = Exploit
+JumpOverWallsTitle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+JumpOverWallsTitle.BackgroundTransparency = 1.000
+JumpOverWallsTitle.Position = UDim2.new(0.289883256, 0, -0.00606060587, 0)
+JumpOverWallsTitle.Size = UDim2.new(0, 200, 0, 50)
+JumpOverWallsTitle.Font = Enum.Font.GothamBlack
+JumpOverWallsTitle.Text = "Jump Over The Walls Hack"
+JumpOverWallsTitle.TextColor3 = Color3.fromRGB(255, 255, 255)
+JumpOverWallsTitle.TextSize = 14.000
+
+MadeByTitle.Name = "MadeByTitle"
+MadeByTitle.Parent = Exploit
+MadeByTitle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MadeByTitle.BackgroundTransparency = 1.000
+MadeByTitle.Position = UDim2.new(0.556420267, 0, 0.863636374, 0)
+MadeByTitle.Size = UDim2.new(0, 200, 0, 50)
+MadeByTitle.Font = Enum.Font.GothamBlack
+MadeByTitle.Text = "by penguin from club penguin #5673"
+MadeByTitle.TextColor3 = Color3.fromRGB(255, 255, 255)
+MadeByTitle.TextSize = 14.000
+
+GetAllBadges.Name = "GetAllBadges"
+GetAllBadges.Parent = Exploit
+GetAllBadges.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+GetAllBadges.Position = UDim2.new(0.289883256, 0, 0.406060576, 0)
+GetAllBadges.Size = UDim2.new(0, 200, 0, 50)
+GetAllBadges.Style = Enum.ButtonStyle.RobloxRoundButton
+GetAllBadges.Font = Enum.Font.GothamBold
+GetAllBadges.Text = "Get All Badges"
+GetAllBadges.TextColor3 = Color3.fromRGB(255, 255, 255)
+GetAllBadges.TextSize = 14.000
+
+-- Scripts:
+
+local function OGUO_fake_script() -- Exploit.Dragify 
+	local script = Instance.new('LocalScript', Exploit)
+
+	local UIS = game:GetService("UserInputService")
+	function dragify(Frame)
+	    dragToggle = nil
+	    local dragSpeed = 0.50
+	    dragInput = nil
+	    dragStart = nil
+	    local dragPos = nil
+	    function updateInput(input)
+	        local Delta = input.Position - dragStart
+	        local Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + Delta.X, startPos.Y.Scale, startPos.Y.Offset + Delta.Y)
+	        game:GetService("TweenService"):Create(Frame, TweenInfo.new(0.30), {Position = Position}):Play()
+	    end
+	    Frame.InputBegan:Connect(function(input)
+	        if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) and UIS:GetFocusedTextBox() == nil then
+	            dragToggle = true
+	            dragStart = input.Position
+	            startPos = Frame.Position
+	            input.Changed:Connect(function()
+	                if input.UserInputState == Enum.UserInputState.End then
+	                    dragToggle = false
+	                end
+	            end)
+	        end
+	    end)
+	    Frame.InputChanged:Connect(function(input)
+	        if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+	            dragInput = input
+	        end
+	    end)
+	    game:GetService("UserInputService").InputChanged:Connect(function(input)
+	        if input == dragInput and dragToggle then
+	            updateInput(input)
+	        end
+	    end)
+	end
+	
+	dragify(script.Parent)
+end
+coroutine.wrap(OGUO_fake_script)()
+local function MCVTIJ_fake_script() -- GetAllBadges.LocalScript 
+	local script = Instance.new('LocalScript', GetAllBadges)
+
+		disabled = false
+	        
+	        script.Parent.MouseButton1Click:connect(function()
+	        local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
+	        local location = CFrame.new(-150.276, -7.9, 2.12915)
+	        local humanoid = game.Players.LocalPlayer.Character.Humanoid
+	        humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+	        wait(0.1)
+	        pl.CFrame = location
+	        end)
+end
+coroutine.wrap(MCVTIJ_fake_script)()
+local function NRIMMBJ_fake_script() -- GetAllBadges.LocalScript 
+	local script = Instance.new('LocalScript', GetAllBadges)
+
+		disabled = false
+	        
+	        script.Parent.MouseButton1Click:connect(function()
+	        wait(5)
+	        local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
+	        local location = CFrame.new(155.261, -7.89999, 1.62837)
+	        local humanoid = game.Players.LocalPlayer.Character.Humanoid
+	        wait(0.1)
+	        pl.CFrame = location
+	        end)
+end
+coroutine.wrap(NRIMMBJ_fake_script)()
+local function HTKAYKW_fake_script() -- GetAllBadges.LocalScript 
+	local script = Instance.new('LocalScript', GetAllBadges)
+
+		disabled = false
+	        
+	        script.Parent.MouseButton1Click:connect(function()
+	        wait(10)
+	        local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
+	        local location = CFrame.new(154.752, -7.65, 81.638)
+	        local humanoid = game.Players.LocalPlayer.Character.Humanoid
+	        wait(0.1)
+	        pl.CFrame = location
+	        end)
+end
+coroutine.wrap(HTKAYKW_fake_script)()
+local function WCCBU_fake_script() -- GetAllBadges.LocalScript 
+	local script = Instance.new('LocalScript', GetAllBadges)
+
+		disabled = false
+	        
+	        script.Parent.MouseButton1Click:connect(function()
+	        wait(15)
+	        local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
+	        local location = CFrame.new(150.593, -7.42999, 163.001)
+	        local humanoid = game.Players.LocalPlayer.Character.Humanoid
+	        wait(0.1)
+	        pl.CFrame = location
+	        end)
+end
+coroutine.wrap(WCCBU_fake_script)()
+local function CRSRYF_fake_script() -- GetAllBadges.LocalScript 
+	local script = Instance.new('LocalScript', GetAllBadges)
+
+		disabled = false
+	        
+	        script.Parent.MouseButton1Click:connect(function()
+	        wait(20)
+	        local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
+	        local location = CFrame.new(153.991, -7.89989, 241.732)
+	        local humanoid = game.Players.LocalPlayer.Character.Humanoid
+	        wait(0.1)
+	        pl.CFrame = location
+	        end)
+end
+coroutine.wrap(CRSRYF_fake_script)()
+local function USCQ_fake_script() -- GetAllBadges.LocalScript 
+	local script = Instance.new('LocalScript', GetAllBadges)
+
+		disabled = false
+	        
+	        script.Parent.MouseButton1Click:connect(function()
+	        wait(25)
+	        local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
+	        local location = CFrame.new(153.991, -7.89989, 241.732)
+	        local humanoid = game.Players.LocalPlayer.Character.Humanoid
+	        wait(0.1)
+	        pl.CFrame = location
+	        end)
+end
+coroutine.wrap(USCQ_fake_script)()
+local function XAVQ_fake_script() -- GetAllBadges.LocalScript 
+	local script = Instance.new('LocalScript', GetAllBadges)
+
+		disabled = false
+	        
+	        script.Parent.MouseButton1Click:connect(function()
+	        wait(30)
+	        local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
+	        local location = CFrame.new(-150.94, -7.43, 241.47)
+	        local humanoid = game.Players.LocalPlayer.Character.Humanoid
+	        wait(0.1)
+	        pl.CFrame = location
+	        end)
+end
+coroutine.wrap(XAVQ_fake_script)()
+local function VQPDDDY_fake_script() -- GetAllBadges.LocalScript 
+	local script = Instance.new('LocalScript', GetAllBadges)
+
+		disabled = false
+	        
+	        script.Parent.MouseButton1Click:connect(function()
+	        wait(35)
+	        local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
+	        local location = CFrame.new(-150.94, -7.43, 81.3448)
+	        local humanoid = game.Players.LocalPlayer.Character.Humanoid
+	        wait(0.1)
+	        pl.CFrame = location
+	        end)
+	    
+	        script.Parent.MouseButton1Click:connect(function()
+	        wait(10)
+	        local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
+	        local location = CFrame.new(-150.94, -7.43, 161.845)
+	        local humanoid = game.Players.LocalPlayer.Character.Humanoid
+	        wait(0.1)
+	        pl.CFrame = location
+	        end)
+	    
+	        script.Parent.MouseButton1Click:connect(function()
+	        wait(10)
+	        local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
+	        local location = CFrame.new(5.01477, -3.40333, 3.12376)
+	        local humanoid = game.Players.LocalPlayer.Character.Humanoid
+	        wait(0.1)
+	        pl.CFrame = location
+	        end)
+end
+coroutine.wrap(VQPDDDY_fake_script)()
+local function TFXOZLT_fake_script() -- GetAllBadges.LocalScript 
+	local script = Instance.new('LocalScript', GetAllBadges)
+
+		disabled = false
+	        
+	        script.Parent.MouseButton1Click:connect(function()
+	        wait(40)
+	        local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
+	        local location = CFrame.new(-150.94, -7.43, 161.845)
+	        local humanoid = game.Players.LocalPlayer.Character.Humanoid
+	        wait(0.1)
+	        pl.CFrame = location
+	        end)
+end
+coroutine.wrap(TFXOZLT_fake_script)()
+local function EOAGCV_fake_script() -- GetAllBadges.LocalScript 
+	local script = Instance.new('LocalScript', GetAllBadges)
+
+		disabled = false
+	        
+	        script.Parent.MouseButton1Click:connect(function()
+	        wait(45)
+	        local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
+	        local location = CFrame.new(5.01477, -3.40333, 3.12376)
+	        local humanoid = game.Players.LocalPlayer.Character.Humanoid
+	        wait(0.1)
+	        pl.CFrame = location
+	        end)
+end
+coroutine.wrap(EOAGCV_fake_script)()

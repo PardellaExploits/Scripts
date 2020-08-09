@@ -1,0 +1,326 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local PrisonLifeGUI = Instance.new("ScreenGui")
+local Main = Instance.new("Frame")
+local Frame = Instance.new("ImageButton")
+local Criminals = Instance.new("TextButton")
+local NA = Instance.new("TextButton")
+local Prisoners = Instance.new("TextButton")
+local CriminalBase = Instance.new("TextButton")
+local GuardsRoom = Instance.new("TextButton")
+local Prison = Instance.new("TextButton")
+local Cells = Instance.new("TextButton")
+local AK47 = Instance.new("TextButton")
+local M9 = Instance.new("TextButton")
+local Remmington = Instance.new("TextButton")
+local BaseballBat = Instance.new("TextButton")
+local AllGuns = Instance.new("TextButton")
+local TextLabel = Instance.new("TextLabel")
+local Guards = Instance.new("TextButton")
+local Frame_2 = Instance.new("Frame")
+
+--Properties:
+
+PrisonLifeGUI.Name = "PrisonLifeGUI"
+PrisonLifeGUI.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+PrisonLifeGUI.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Main.Name = "Main"
+Main.Parent = PrisonLifeGUI
+Main.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Main.BackgroundTransparency = 1.000
+Main.Position = UDim2.new(0.148086518, 0, 0.149051487, 0)
+Main.Size = UDim2.new(0, 562, 0, 332)
+
+Frame.Name = "Frame"
+Frame.Parent = Main
+Frame.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+Frame.BackgroundTransparency = 1.000
+Frame.Position = UDim2.new(0.00370082818, 0, -0.00204068422, 0)
+Frame.Size = UDim2.new(0, 562, 0, 332)
+Frame.Image = "rbxassetid://2790371148"
+Frame.ImageColor3 = Color3.fromRGB(35, 35, 35)
+Frame.ScaleType = Enum.ScaleType.Slice
+Frame.SliceCenter = Rect.new(32, 32, 224, 224)
+
+Criminals.Name = "Criminals"
+Criminals.Parent = Frame
+Criminals.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Criminals.Position = UDim2.new(0.049822066, 0, 0.246987939, 0)
+Criminals.Size = UDim2.new(0, 166, 0, 50)
+Criminals.Style = Enum.ButtonStyle.RobloxRoundButton
+Criminals.Font = Enum.Font.GothamBold
+Criminals.Text = "Criminals"
+Criminals.TextColor3 = Color3.fromRGB(255, 255, 255)
+Criminals.TextSize = 14.000
+Criminals.MouseButton1Click:connect(function()
+weld02 = game.Players.LocalPlayer.Character.HumanoidRootPart.Position
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-919.958, 95.327, 2138.189)
+    wait(0.075)
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(weld02)
+end)
+
+NA.Name = "N/A"
+NA.Parent = Frame
+NA.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+NA.Position = UDim2.new(0.049822066, 0, 0.397590369, 0)
+NA.Size = UDim2.new(0, 166, 0, 50)
+NA.Style = Enum.ButtonStyle.RobloxRoundButton
+NA.Font = Enum.Font.GothamBold
+NA.Text = "N/A"
+NA.TextColor3 = Color3.fromRGB(255, 255, 255)
+NA.TextSize = 14.000
+NA.MouseButton1Click:connect(function()
+Workspace.Remote.TeamEvent:FireServer("Medium stone grey")
+end)
+
+Prisoners.Name = "Prisoners"
+Prisoners.Parent = Frame
+Prisoners.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Prisoners.Position = UDim2.new(0.049822066, 0, 0.548192799, 0)
+Prisoners.Size = UDim2.new(0, 166, 0, 50)
+Prisoners.Style = Enum.ButtonStyle.RobloxRoundButton
+Prisoners.Font = Enum.Font.GothamBold
+Prisoners.Text = "Prisoners"
+Prisoners.TextColor3 = Color3.fromRGB(255, 255, 255)
+Prisoners.TextSize = 14.000
+Prisoners.MouseButton1Click:connect(function()
+Workspace.Remote.TeamEvent:FireServer("Bright orange")
+end)
+
+CriminalBase.Name = "CriminalBase"
+CriminalBase.Parent = Frame
+CriminalBase.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+CriminalBase.Position = UDim2.new(0.663701057, 0, 0.246987939, 0)
+CriminalBase.Size = UDim2.new(0, 166, 0, 50)
+CriminalBase.Style = Enum.ButtonStyle.RobloxRoundButton
+CriminalBase.Font = Enum.Font.GothamBold
+CriminalBase.Text = "Criminal Base"
+CriminalBase.TextColor3 = Color3.fromRGB(255, 255, 255)
+CriminalBase.TextSize = 14.000
+CriminalBase.MouseButton1Click:connect(function()
+local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
+local location = CFrame.new(-920.223, 95.2932, 2132.08)
+local humanoid = game.Players.LocalPlayer.Character.Humanoid
+wait(0.1)
+pl.CFrame = location
+end)
+
+GuardsRoom.Name = "GuardsRoom"
+GuardsRoom.Parent = Frame
+GuardsRoom.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+GuardsRoom.Position = UDim2.new(0.663701057, 0, 0.698795199, 0)
+GuardsRoom.Size = UDim2.new(0, 166, 0, 50)
+GuardsRoom.Style = Enum.ButtonStyle.RobloxRoundButton
+GuardsRoom.Font = Enum.Font.GothamBold
+GuardsRoom.Text = "Guards Room"
+GuardsRoom.TextColor3 = Color3.fromRGB(255, 255, 255)
+GuardsRoom.TextSize = 14.000
+GuardsRoom.MouseButton1Click:connect(function()
+local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
+local location = CFrame.new(832.361, 99.9718, 2310.6)
+local humanoid = game.Players.LocalPlayer.Character.Humanoid
+wait(0.1)
+pl.CFrame = location
+end)
+
+Prison.Name = "Prison"
+Prison.Parent = Frame
+Prison.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Prison.Position = UDim2.new(0.663701057, 0, 0.397590339, 0)
+Prison.Size = UDim2.new(0, 166, 0, 50)
+Prison.Style = Enum.ButtonStyle.RobloxRoundButton
+Prison.Font = Enum.Font.GothamBold
+Prison.Text = "Prison"
+Prison.TextColor3 = Color3.fromRGB(255, 255, 255)
+Prison.TextSize = 14.000
+Prison.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+Prison.MouseButton1Click:connect(function()
+local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
+local location = CFrame.new(914.956, 99.9718, 2378.71)
+local humanoid = game.Players.LocalPlayer.Character.Humanoid
+wait(0.1)
+pl.CFrame = location
+end)
+
+Cells.Name = "Cells"
+Cells.Parent = Frame
+Cells.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Cells.Position = UDim2.new(0.663701057, 0, 0.548192799, 0)
+Cells.Size = UDim2.new(0, 166, 0, 50)
+Cells.Style = Enum.ButtonStyle.RobloxRoundButton
+Cells.Font = Enum.Font.GothamBold
+Cells.Text = "Cells"
+Cells.TextColor3 = Color3.fromRGB(255, 255, 255)
+Cells.TextSize = 14.000
+Cells.MouseButton1Click:connect(function()
+local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
+local location = CFrame.new(915.965, 99.9718, 2460.59)
+local humanoid = game.Players.LocalPlayer.Character.Humanoid
+wait(0.1)
+pl.CFrame = location
+end)
+
+AK47.Name = "AK47"
+AK47.Parent = Frame
+AK47.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AK47.Position = UDim2.new(0.355871886, 0, 0.171686739, 0)
+AK47.Size = UDim2.new(0, 166, 0, 50)
+AK47.Style = Enum.ButtonStyle.RobloxRoundButton
+AK47.Font = Enum.Font.GothamBold
+AK47.Text = "AK47"
+AK47.TextColor3 = Color3.fromRGB(255, 255, 255)
+AK47.TextSize = 14.000
+AK47.MouseButton1Click:connect(function()
+Workspace.Remote.ItemHandler:InvokeServer(Workspace.Prison_ITEMS.giver["AK-47"].ITEMPICKUP)
+end)
+
+M9.Name = "M9"
+M9.Parent = Frame
+M9.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+M9.Position = UDim2.new(0.355871886, 0, 0.322289139, 0)
+M9.Size = UDim2.new(0, 166, 0, 50)
+M9.Style = Enum.ButtonStyle.RobloxRoundButton
+M9.Font = Enum.Font.GothamBold
+M9.Text = "M9"
+M9.TextColor3 = Color3.fromRGB(255, 255, 255)
+M9.TextSize = 14.000
+M9.MouseButton1Click:connect(function()
+Workspace.Remote.ItemHandler:InvokeServer(Workspace.Prison_ITEMS.giver["M9"].ITEMPICKUP)
+end)
+
+Remmington.Name = "Remmington"
+Remmington.Parent = Frame
+Remmington.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Remmington.Position = UDim2.new(0.355871886, 0, 0.472891569, 0)
+Remmington.Size = UDim2.new(0, 166, 0, 50)
+Remmington.Style = Enum.ButtonStyle.RobloxRoundButton
+Remmington.Font = Enum.Font.GothamBold
+Remmington.Text = "Remmington"
+Remmington.TextColor3 = Color3.fromRGB(255, 255, 255)
+Remmington.TextSize = 14.000
+Remmington.MouseButton1Click:connect(function()
+Workspace.Remote.ItemHandler:InvokeServer(Workspace.Prison_ITEMS.giver["Remington 870"].ITEMPICKUP)
+end)
+
+BaseballBat.Name = "BaseballBat"
+BaseballBat.Parent = Frame
+BaseballBat.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+BaseballBat.Position = UDim2.new(0.355871886, 0, 0.77409637, 0)
+BaseballBat.Size = UDim2.new(0, 166, 0, 50)
+BaseballBat.Style = Enum.ButtonStyle.RobloxRoundButton
+BaseballBat.Font = Enum.Font.GothamBold
+BaseballBat.Text = "Baseball Bat"
+BaseballBat.TextColor3 = Color3.fromRGB(255, 255, 255)
+BaseballBat.TextSize = 14.000
+BaseballBat.MouseButton1Click:connect(function()
+local plr=game.Players.LocalPlayer;local tool=Instance.new("Tool",plr.Backpack)tool.GripPos=Vector3.new(0.1,-1,0)tool.Name="Baseball Bat"local k=Instance.new("Part",tool)k.Name="Handle"k.Size=Vector3.new(0.4,4,0.4)local l=Instance.new("Animation",tool)l.AnimationId="rbxassetid://218504594"local m=plr.Character.Humanoid:LoadAnimation(l)db=true;da=false;tool.Equipped:connect(function()tool.Activated:connect(function()if db==true then db=false;m:Play()wait()da=true;db=true;wait(0.1)da=false end end)end)k.Touched:connect(function(n)if da==true then local o=n.Parent.Humanoid;if o~=nil then local p=game.Players:FindFirstChild(n.Parent.Name)for j=1,10 do if p.Name~="gwapobeboy3_YT"then game.ReplicatedStorage.meleeEvent:FireServer(p)end end end end end)
+end)
+
+AllGuns.Name = "AllGuns"
+AllGuns.Parent = Frame
+AllGuns.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AllGuns.Position = UDim2.new(0.355871886, 0, 0.623493969, 0)
+AllGuns.Size = UDim2.new(0, 166, 0, 50)
+AllGuns.Style = Enum.ButtonStyle.RobloxRoundButton
+AllGuns.Font = Enum.Font.GothamBold
+AllGuns.Text = "All Guns"
+AllGuns.TextColor3 = Color3.fromRGB(255, 255, 255)
+AllGuns.TextSize = 14.000
+AllGuns.MouseButton1Click:connect(function()
+Workspace.Remote.ItemHandler:InvokeServer(Workspace.Prison_ITEMS.giver["Remington 870"].ITEMPICKUP)
+Workspace.Remote.ItemHandler:InvokeServer(Workspace.Prison_ITEMS.giver["M9"].ITEMPICKUP)
+Workspace.Remote.ItemHandler:InvokeServer(Workspace.Prison_ITEMS.giver["AK-47"].ITEMPICKUP)
+end)
+
+TextLabel.Parent = Frame
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.Position = UDim2.new(0.345195711, 0, -0.00301204808, 0)
+TextLabel.Size = UDim2.new(0, 200, 0, 50)
+TextLabel.Font = Enum.Font.GothamBold
+TextLabel.Text = "Prison Life GUI"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextSize = 14.000
+
+Guards.Name = "Guards"
+Guards.Parent = Frame
+Guards.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Guards.BorderColor3 = Color3.fromRGB(255, 255, 255)
+Guards.Position = UDim2.new(0.049822066, 0, 0.698795199, 0)
+Guards.Size = UDim2.new(0, 166, 0, 50)
+Guards.Style = Enum.ButtonStyle.RobloxRoundButton
+Guards.Font = Enum.Font.GothamBold
+Guards.Text = "Guards"
+Guards.TextColor3 = Color3.fromRGB(255, 255, 255)
+Guards.TextSize = 14.000
+Guards.MouseButton1Click:connect(function()
+Workspace.Remote.TeamEvent:FireServer("Bright blue")
+end)
+
+Frame_2.Parent = Frame
+Frame_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame_2.BorderColor3 = Color3.fromRGB(255, 255, 255)
+Frame_2.Position = UDim2.new(0.0302491095, 0, 0.126506031, 0)
+Frame_2.Size = UDim2.new(0, 533, 0, 0)
+
+-- Scripts:
+
+local function ITSARJP_fake_script() -- PrisonLifeGUI.LocalScript 
+	local script = Instance.new('LocalScript', PrisonLifeGUI)
+
+	local NotificationBindable = Instance.new("BindableFunction")
+	NotificationBindable.OnInvoke = callback
+	
+	game.StarterGui:SetCore("SendNotification", {
+		Title = "GUI Credits";
+		Text = "Made by Pardella Exploits";
+		Duration = 5;
+	})
+end
+coroutine.wrap(ITSARJP_fake_script)()
+local function DETWCLE_fake_script() -- Frame.Dragify 
+	local script = Instance.new('LocalScript', Frame)
+
+	local UIS = game:GetService("UserInputService")
+	function dragify(Frame)
+	    dragToggle = nil
+	    local dragSpeed = 0.50
+	    dragInput = nil
+	    dragStart = nil
+	    local dragPos = nil
+	    function updateInput(input)
+	        local Delta = input.Position - dragStart
+	        local Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + Delta.X, startPos.Y.Scale, startPos.Y.Offset + Delta.Y)
+	        game:GetService("TweenService"):Create(Frame, TweenInfo.new(0.30), {Position = Position}):Play()
+	    end
+	    Frame.InputBegan:Connect(function(input)
+	        if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) and UIS:GetFocusedTextBox() == nil then
+	            dragToggle = true
+	            dragStart = input.Position
+	            startPos = Frame.Position
+	            input.Changed:Connect(function()
+	                if input.UserInputState == Enum.UserInputState.End then
+	                    dragToggle = false
+	                end
+	            end)
+	        end
+	    end)
+	    Frame.InputChanged:Connect(function(input)
+	        if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+	            dragInput = input
+	        end
+	    end)
+	    game:GetService("UserInputService").InputChanged:Connect(function(input)
+	        if input == dragInput and dragToggle then
+	            updateInput(input)
+	        end
+	    end)
+	end
+	
+	dragify(script.Parent)
+end
+coroutine.wrap(DETWCLE_fake_script)()

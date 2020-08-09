@@ -1,0 +1,838 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local AdoptMeGUI = Instance.new("ScreenGui")
+local TeleportsHead = Instance.new("Frame")
+local TeleportsButtons = Instance.new("Frame")
+local School = Instance.new("TextButton")
+local Balloon = Instance.new("TextButton")
+local PetShop = Instance.new("TextButton")
+local Hospital = Instance.new("TextButton")
+local WaterPark = Instance.new("TextButton")
+local FoodPlaces = Instance.new("TextButton")
+local ToyShop = Instance.new("TextButton")
+local CarDealer = Instance.new("TextButton")
+local Nursery = Instance.new("TextButton")
+local SoccerFeild = Instance.new("TextButton")
+local CampSite = Instance.new("TextButton")
+local SkyCastle = Instance.new("TextButton")
+local Playground = Instance.new("TextButton")
+local CityPortal = Instance.new("TextButton")
+local HousePortal = Instance.new("TextButton")
+local HeaderOpenTele = Instance.new("TextButton")
+local PlayerScriptsHead = Instance.new("Frame")
+local PlayerScriptsButtons = Instance.new("Frame")
+local Speed25 = Instance.new("TextButton")
+local Speed50 = Instance.new("TextButton")
+local Jump25 = Instance.new("TextButton")
+local Jump50 = Instance.new("TextButton")
+local InfJump = Instance.new("TextButton")
+local HeaderOpenPlayer = Instance.new("TextButton")
+local AutoFarmHead = Instance.new("Frame")
+local HeaderOpenAuto = Instance.new("TextButton")
+local AutoFarmButtons = Instance.new("Frame")
+local AutoF = Instance.new("TextButton")
+local AutoFEat = Instance.new("TextButton")
+local AutoFDrink = Instance.new("TextButton")
+
+--Properties:
+
+AdoptMeGUI.Name = "AdoptMeGUI"
+AdoptMeGUI.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+AdoptMeGUI.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+TeleportsHead.Name = "TeleportsHead"
+TeleportsHead.Parent = AdoptMeGUI
+TeleportsHead.BackgroundColor3 = Color3.fromRGB(45, 83, 49)
+TeleportsHead.Position = UDim2.new(0.0397351012, 0, 0.017910447, 0)
+TeleportsHead.Size = UDim2.new(0, 172, 0, 21)
+
+TeleportsButtons.Name = "TeleportsButtons"
+TeleportsButtons.Parent = TeleportsHead
+TeleportsButtons.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TeleportsButtons.Position = UDim2.new(-0.000962574035, 0, 0.954015613, 0)
+TeleportsButtons.Size = UDim2.new(0, 172, 0, 564)
+
+School.Name = "School"
+School.Parent = TeleportsButtons
+School.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+School.Position = UDim2.new(0.0581395365, 0, 0.0133753894, 0)
+School.Size = UDim2.new(0, 151, 0, 26)
+School.Font = Enum.Font.GothamBold
+School.Text = "School"
+School.TextColor3 = Color3.fromRGB(255, 255, 255)
+School.TextSize = 14.000
+
+Balloon.Name = "Balloon"
+Balloon.Parent = TeleportsButtons
+Balloon.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Balloon.Position = UDim2.new(0.0581395365, 0, 0.0799115375, 0)
+Balloon.Size = UDim2.new(0, 151, 0, 26)
+Balloon.Font = Enum.Font.GothamBold
+Balloon.Text = "Balloon"
+Balloon.TextColor3 = Color3.fromRGB(255, 255, 255)
+Balloon.TextSize = 14.000
+
+PetShop.Name = "PetShop"
+PetShop.Parent = TeleportsButtons
+PetShop.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+PetShop.Position = UDim2.new(0.0581395365, 0, 0.146216869, 0)
+PetShop.Size = UDim2.new(0, 151, 0, 26)
+PetShop.Font = Enum.Font.GothamBold
+PetShop.Text = "Pet Shop"
+PetShop.TextColor3 = Color3.fromRGB(255, 255, 255)
+PetShop.TextSize = 14.000
+
+Hospital.Name = "Hospital"
+Hospital.Parent = TeleportsButtons
+Hospital.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Hospital.Position = UDim2.new(0.0581395365, 0, 0.212753028, 0)
+Hospital.Size = UDim2.new(0, 151, 0, 26)
+Hospital.Font = Enum.Font.GothamBold
+Hospital.Text = "Hospital"
+Hospital.TextColor3 = Color3.fromRGB(255, 255, 255)
+Hospital.TextSize = 14.000
+
+WaterPark.Name = "WaterPark"
+WaterPark.Parent = TeleportsButtons
+WaterPark.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+WaterPark.Position = UDim2.new(0.0581395365, 0, 0.279058367, 0)
+WaterPark.Size = UDim2.new(0, 151, 0, 26)
+WaterPark.Font = Enum.Font.GothamBold
+WaterPark.Text = "Water Park"
+WaterPark.TextColor3 = Color3.fromRGB(255, 255, 255)
+WaterPark.TextSize = 14.000
+
+FoodPlaces.Name = "FoodPlaces"
+FoodPlaces.Parent = TeleportsButtons
+FoodPlaces.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+FoodPlaces.Position = UDim2.new(0.0581395365, 0, 0.346955478, 0)
+FoodPlaces.Size = UDim2.new(0, 151, 0, 26)
+FoodPlaces.Font = Enum.Font.GothamBold
+FoodPlaces.Text = "Food Places"
+FoodPlaces.TextColor3 = Color3.fromRGB(255, 255, 255)
+FoodPlaces.TextSize = 14.000
+
+ToyShop.Name = "ToyShop"
+ToyShop.Parent = TeleportsButtons
+ToyShop.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+ToyShop.Position = UDim2.new(0.0581395365, 0, 0.413029999, 0)
+ToyShop.Size = UDim2.new(0, 151, 0, 26)
+ToyShop.Font = Enum.Font.GothamBold
+ToyShop.Text = "Toy Shop"
+ToyShop.TextColor3 = Color3.fromRGB(255, 255, 255)
+ToyShop.TextSize = 14.000
+
+CarDealer.Name = "CarDealer"
+CarDealer.Parent = TeleportsButtons
+CarDealer.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+CarDealer.Position = UDim2.new(0.0581395365, 0, 0.478738427, 0)
+CarDealer.Size = UDim2.new(0, 151, 0, 26)
+CarDealer.Font = Enum.Font.GothamBold
+CarDealer.Text = "Car Dealer"
+CarDealer.TextColor3 = Color3.fromRGB(255, 255, 255)
+CarDealer.TextSize = 14.000
+
+Nursery.Name = "Nursery"
+Nursery.Parent = TeleportsButtons
+Nursery.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Nursery.Position = UDim2.new(0.0581395365, 0, 0.544446886, 0)
+Nursery.Size = UDim2.new(0, 151, 0, 26)
+Nursery.Font = Enum.Font.GothamBold
+Nursery.Text = "Nursery"
+Nursery.TextColor3 = Color3.fromRGB(255, 255, 255)
+Nursery.TextSize = 14.000
+
+SoccerFeild.Name = "SoccerFeild"
+SoccerFeild.Parent = TeleportsButtons
+SoccerFeild.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+SoccerFeild.Position = UDim2.new(0.0581395365, 0, 0.610155284, 0)
+SoccerFeild.Size = UDim2.new(0, 151, 0, 26)
+SoccerFeild.Font = Enum.Font.GothamBold
+SoccerFeild.Text = "Soccer Feild"
+SoccerFeild.TextColor3 = Color3.fromRGB(255, 255, 255)
+SoccerFeild.TextSize = 14.000
+
+CampSite.Name = "CampSite"
+CampSite.Parent = TeleportsButtons
+CampSite.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+CampSite.Position = UDim2.new(0.0581395365, 0, 0.675863683, 0)
+CampSite.Size = UDim2.new(0, 151, 0, 26)
+CampSite.Font = Enum.Font.GothamBold
+CampSite.Text = "Camp Site"
+CampSite.TextColor3 = Color3.fromRGB(255, 255, 255)
+CampSite.TextSize = 14.000
+
+SkyCastle.Name = "SkyCastle"
+SkyCastle.Parent = TeleportsButtons
+SkyCastle.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+SkyCastle.Position = UDim2.new(0.0581395365, 0, 0.741572082, 0)
+SkyCastle.Size = UDim2.new(0, 151, 0, 26)
+SkyCastle.Font = Enum.Font.GothamBold
+SkyCastle.Text = "Sky Castle"
+SkyCastle.TextColor3 = Color3.fromRGB(255, 255, 255)
+SkyCastle.TextSize = 14.000
+
+Playground.Name = "Playground"
+Playground.Parent = TeleportsButtons
+Playground.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Playground.Position = UDim2.new(0.0581395365, 0, 0.807280481, 0)
+Playground.Size = UDim2.new(0, 151, 0, 26)
+Playground.Font = Enum.Font.GothamBold
+Playground.Text = "Playground"
+Playground.TextColor3 = Color3.fromRGB(255, 255, 255)
+Playground.TextSize = 14.000
+
+CityPortal.Name = "CityPortal"
+CityPortal.Parent = TeleportsButtons
+CityPortal.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+CityPortal.Position = UDim2.new(0.0581395365, 0, 0.872988939, 0)
+CityPortal.Size = UDim2.new(0, 151, 0, 26)
+CityPortal.Font = Enum.Font.GothamBold
+CityPortal.Text = "City Portal"
+CityPortal.TextColor3 = Color3.fromRGB(255, 255, 255)
+CityPortal.TextSize = 14.000
+
+HousePortal.Name = "HousePortal"
+HousePortal.Parent = TeleportsButtons
+HousePortal.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+HousePortal.Position = UDim2.new(0.0581395365, 0, 0.940028071, 0)
+HousePortal.Size = UDim2.new(0, 151, 0, 26)
+HousePortal.Font = Enum.Font.GothamBold
+HousePortal.Text = "House Portal"
+HousePortal.TextColor3 = Color3.fromRGB(255, 255, 255)
+HousePortal.TextSize = 14.000
+
+HeaderOpenTele.Name = "HeaderOpenTele"
+HeaderOpenTele.Parent = TeleportsHead
+HeaderOpenTele.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+HeaderOpenTele.BackgroundTransparency = 1.000
+HeaderOpenTele.Size = UDim2.new(0, 171, 0, 21)
+HeaderOpenTele.Font = Enum.Font.GothamBold
+HeaderOpenTele.Text = "Teleports"
+HeaderOpenTele.TextColor3 = Color3.fromRGB(255, 255, 255)
+HeaderOpenTele.TextSize = 14.000
+
+PlayerScriptsHead.Name = "PlayerScriptsHead"
+PlayerScriptsHead.Parent = AdoptMeGUI
+PlayerScriptsHead.BackgroundColor3 = Color3.fromRGB(45, 83, 49)
+PlayerScriptsHead.Position = UDim2.new(0.157134116, 0, 0.0164201334, 0)
+PlayerScriptsHead.Size = UDim2.new(0, 171, 0, 21)
+
+PlayerScriptsButtons.Name = "PlayerScriptsButtons"
+PlayerScriptsButtons.Parent = PlayerScriptsHead
+PlayerScriptsButtons.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+PlayerScriptsButtons.Position = UDim2.new(-0.00427924283, 0, 0.954015613, 0)
+PlayerScriptsButtons.Size = UDim2.new(0, 172, 0, 195)
+
+Speed25.Name = "Speed25"
+Speed25.Parent = PlayerScriptsButtons
+Speed25.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Speed25.Position = UDim2.new(0.0581395365, 0, 0.0452225246, 0)
+Speed25.Size = UDim2.new(0, 151, 0, 26)
+Speed25.Font = Enum.Font.GothamBold
+Speed25.Text = "Speed +25"
+Speed25.TextColor3 = Color3.fromRGB(255, 255, 255)
+Speed25.TextSize = 14.000
+
+Speed50.Name = "Speed50"
+Speed50.Parent = PlayerScriptsButtons
+Speed50.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Speed50.Position = UDim2.new(0.0581395365, 0, 0.229609281, 0)
+Speed50.Size = UDim2.new(0, 151, 0, 26)
+Speed50.Font = Enum.Font.GothamBold
+Speed50.Text = "Speed +50"
+Speed50.TextColor3 = Color3.fromRGB(255, 255, 255)
+Speed50.TextSize = 14.000
+
+Jump25.Name = "Jump25"
+Jump25.Parent = PlayerScriptsButtons
+Jump25.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Jump25.Position = UDim2.new(0.0581395365, 0, 0.420365453, 0)
+Jump25.Size = UDim2.new(0, 151, 0, 26)
+Jump25.Font = Enum.Font.GothamBold
+Jump25.Text = "Jump Height +25"
+Jump25.TextColor3 = Color3.fromRGB(255, 255, 255)
+Jump25.TextSize = 14.000
+
+Jump50.Name = "Jump50"
+Jump50.Parent = PlayerScriptsButtons
+Jump50.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Jump50.Position = UDim2.new(0.0581395365, 0, 0.615008593, 0)
+Jump50.Size = UDim2.new(0, 151, 0, 26)
+Jump50.Font = Enum.Font.GothamBold
+Jump50.Text = "Jump Height +50"
+Jump50.TextColor3 = Color3.fromRGB(255, 255, 255)
+Jump50.TextSize = 14.000
+
+InfJump.Name = "InfJump"
+InfJump.Parent = PlayerScriptsButtons
+InfJump.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+InfJump.Position = UDim2.new(0.0581395365, 0, 0.804752171, 0)
+InfJump.Size = UDim2.new(0, 151, 0, 26)
+InfJump.Font = Enum.Font.GothamBold
+InfJump.Text = "Infinite Jump"
+InfJump.TextColor3 = Color3.fromRGB(255, 255, 255)
+InfJump.TextSize = 14.000
+
+HeaderOpenPlayer.Name = "HeaderOpenPlayer"
+HeaderOpenPlayer.Parent = PlayerScriptsHead
+HeaderOpenPlayer.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+HeaderOpenPlayer.BackgroundTransparency = 1.000
+HeaderOpenPlayer.Size = UDim2.new(0, 171, 0, 21)
+HeaderOpenPlayer.Font = Enum.Font.GothamBold
+HeaderOpenPlayer.Text = "Player Scripts"
+HeaderOpenPlayer.TextColor3 = Color3.fromRGB(255, 255, 255)
+HeaderOpenPlayer.TextSize = 14.000
+
+AutoFarmHead.Name = "AutoFarmHead"
+AutoFarmHead.Parent = AdoptMeGUI
+AutoFarmHead.BackgroundColor3 = Color3.fromRGB(45, 83, 49)
+AutoFarmHead.Position = UDim2.new(0.27558732, 0, 0.017910447, 0)
+AutoFarmHead.Size = UDim2.new(0, 171, 0, 21)
+
+HeaderOpenAuto.Name = "HeaderOpenAuto"
+HeaderOpenAuto.Parent = AutoFarmHead
+HeaderOpenAuto.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+HeaderOpenAuto.BackgroundTransparency = 1.000
+HeaderOpenAuto.Size = UDim2.new(0, 171, 0, 21)
+HeaderOpenAuto.Font = Enum.Font.GothamBold
+HeaderOpenAuto.Text = "Auto Farm"
+HeaderOpenAuto.TextColor3 = Color3.fromRGB(255, 255, 255)
+HeaderOpenAuto.TextSize = 14.000
+
+AutoFarmButtons.Name = "AutoFarmButtons"
+AutoFarmButtons.Parent = AutoFarmHead
+AutoFarmButtons.Active = true
+AutoFarmButtons.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+AutoFarmButtons.Position = UDim2.new(-0.00427933037, 0, 0.954015613, 0)
+AutoFarmButtons.Size = UDim2.new(0, 172, 0, 157)
+
+AutoF.Name = "AutoF"
+AutoF.Parent = AutoFarmButtons
+AutoF.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+AutoF.Position = UDim2.new(0.0581395365, 0, 0.108916804, 0)
+AutoF.Size = UDim2.new(0, 151, 0, 26)
+AutoF.Font = Enum.Font.GothamBold
+AutoF.Text = "Auto Farm School"
+AutoF.TextColor3 = Color3.fromRGB(255, 255, 255)
+AutoF.TextSize = 14.000
+
+AutoFEat.Name = "AutoFEat"
+AutoFEat.Parent = AutoFarmButtons
+AutoFEat.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+AutoFEat.Position = UDim2.new(0.0581395365, 0, 0.357324421, 0)
+AutoFEat.Size = UDim2.new(0, 151, 0, 26)
+AutoFEat.Font = Enum.Font.GothamBold
+AutoFEat.Text = "Auto Farm Eating"
+AutoFEat.TextColor3 = Color3.fromRGB(255, 255, 255)
+AutoFEat.TextSize = 14.000
+
+AutoFDrink.Name = "AutoFDrink"
+AutoFDrink.Parent = AutoFarmButtons
+AutoFDrink.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+AutoFDrink.Position = UDim2.new(0.0581395365, 0, 0.586623788, 0)
+AutoFDrink.Size = UDim2.new(0, 151, 0, 26)
+AutoFDrink.Font = Enum.Font.GothamBold
+AutoFDrink.Text = "Auto Farm Drinking"
+AutoFDrink.TextColor3 = Color3.fromRGB(255, 255, 255)
+AutoFDrink.TextSize = 14.000
+
+-- Scripts:
+
+local function BXINQM_fake_script() -- School.LocalScript 
+	local script = Instance.new('LocalScript', School)
+
+	disabled = false
+	
+	script.Parent.MouseButton1Click:connect(function()
+	local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
+	local location = CFrame.new(-306.534, 23.1122, -1504.07)
+	local humanoid = game.Players.LocalPlayer.Character.Humanoid
+	humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+	wait(0.1)
+	pl.CFrame = location
+	end)
+end
+coroutine.wrap(BXINQM_fake_script)()
+local function CXOBC_fake_script() -- Balloon.LocalScript 
+	local script = Instance.new('LocalScript', Balloon)
+
+	disabled = false
+	
+	script.Parent.MouseButton1Click:connect(function()
+	local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
+	local location = CFrame.new(-209.294, 32.0665, -1581.43)
+	local humanoid = game.Players.LocalPlayer.Character.Humanoid
+	humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+	wait(0.1)
+	pl.CFrame = location
+	end)
+end
+coroutine.wrap(CXOBC_fake_script)()
+local function NAXP_fake_script() -- PetShop.LocalScript 
+	local script = Instance.new('LocalScript', PetShop)
+
+	disabled = false
+	
+	script.Parent.MouseButton1Click:connect(function()
+	local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
+	local location = CFrame.new(-200.865, 22.7699, -1503.92)
+	local humanoid = game.Players.LocalPlayer.Character.Humanoid
+	humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+	wait(0.1)
+	pl.CFrame = location
+	end)
+end
+coroutine.wrap(NAXP_fake_script)()
+local function SRXMHLT_fake_script() -- Hospital.LocalScript 
+	local script = Instance.new('LocalScript', Hospital)
+
+	disabled = false
+	
+	script.Parent.MouseButton1Click:connect(function()
+	local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
+	local location = CFrame.new(-192.874, 19.7224, -1445.92)
+	local humanoid = game.Players.LocalPlayer.Character.Humanoid
+	humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+	wait(0.1)
+	pl.CFrame = location
+	end)
+end
+coroutine.wrap(SRXMHLT_fake_script)()
+local function MCSMOE_fake_script() -- WaterPark.LocalScript 
+	local script = Instance.new('LocalScript', WaterPark)
+
+	disabled = false
+	
+	script.Parent.MouseButton1Click:connect(function()
+	local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
+	local location = CFrame.new(-573.544, 25.3561, -1470.17)
+	local humanoid = game.Players.LocalPlayer.Character.Humanoid
+	humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+	wait(0.1)
+	pl.CFrame = location
+	end)
+end
+coroutine.wrap(MCSMOE_fake_script)()
+local function VXGYTCR_fake_script() -- FoodPlaces.LocalScript 
+	local script = Instance.new('LocalScript', FoodPlaces)
+
+	disabled = false
+	
+	script.Parent.MouseButton1Click:connect(function()
+	local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
+	local location = CFrame.new(-250.095, 21.1438, -1747.53)
+	local humanoid = game.Players.LocalPlayer.Character.Humanoid
+	humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+	wait(0.1)
+	pl.CFrame = location
+	end)
+end
+coroutine.wrap(VXGYTCR_fake_script)()
+local function CRHW_fake_script() -- ToyShop.LocalScript 
+	local script = Instance.new('LocalScript', ToyShop)
+
+	disabled = false
+	
+	script.Parent.MouseButton1Click:connect(function()
+	local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
+	local location = CFrame.new(-121.76, 23.0281, -1641.99)
+	local humanoid = game.Players.LocalPlayer.Character.Humanoid
+	humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+	wait(0.1)
+	pl.CFrame = location
+	end)
+end
+coroutine.wrap(CRHW_fake_script)()
+local function EONDCP_fake_script() -- CarDealer.LocalScript 
+	local script = Instance.new('LocalScript', CarDealer)
+
+	disabled = false
+	
+	script.Parent.MouseButton1Click:connect(function()
+	local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
+	local location = CFrame.new(-141.232, 21.0997, -1735.12)
+	local humanoid = game.Players.LocalPlayer.Character.Humanoid
+	humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+	wait(0.1)
+	pl.CFrame = location
+	end)
+end
+coroutine.wrap(EONDCP_fake_script)()
+local function EQMCKKB_fake_script() -- Nursery.LocalScript 
+	local script = Instance.new('LocalScript', Nursery)
+
+	disabled = false
+	
+	script.Parent.MouseButton1Click:connect(function()
+	local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
+	local location = CFrame.new(-247.078, 26.5684, -1489.11)
+	local humanoid = game.Players.LocalPlayer.Character.Humanoid
+	humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+	wait(0.1)
+	pl.CFrame = location
+	end)
+end
+coroutine.wrap(EQMCKKB_fake_script)()
+local function WARXWEQ_fake_script() -- SoccerFeild.LocalScript 
+	local script = Instance.new('LocalScript', SoccerFeild)
+
+	disabled = false
+	
+	script.Parent.MouseButton1Click:connect(function()
+	local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
+	local location = CFrame.new(-11.8401, 32.0672, -1517.44)
+	local humanoid = game.Players.LocalPlayer.Character.Humanoid
+	humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+	wait(0.1)
+	pl.CFrame = location
+	end)
+end
+coroutine.wrap(WARXWEQ_fake_script)()
+local function JVTKRSC_fake_script() -- CampSite.LocalScript 
+	local script = Instance.new('LocalScript', CampSite)
+
+	disabled = false
+	
+	script.Parent.MouseButton1Click:connect(function()
+	local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
+	local location = CFrame.new(-44.566, 25.7049, -1181.77)
+	local humanoid = game.Players.LocalPlayer.Character.Humanoid
+	humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+	wait(0.1)
+	pl.CFrame = location
+	end)
+end
+coroutine.wrap(JVTKRSC_fake_script)()
+local function UXQJHFF_fake_script() -- SkyCastle.LocalScript 
+	local script = Instance.new('LocalScript', SkyCastle)
+
+	disabled = false
+	
+	script.Parent.MouseButton1Click:connect(function()
+	local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
+	local location = CFrame.new(-229.533, 369.757, -1360.85)
+	local humanoid = game.Players.LocalPlayer.Character.Humanoid
+	humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+	wait(0.1)
+	pl.CFrame = location
+	end)
+end
+coroutine.wrap(UXQJHFF_fake_script)()
+local function POTZNJ_fake_script() -- Playground.LocalScript 
+	local script = Instance.new('LocalScript', Playground)
+
+	disabled = false
+	
+	script.Parent.MouseButton1Click:connect(function()
+	local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
+	local location = CFrame.new(-371.731, 32.5836, -1741.58)
+	local humanoid = game.Players.LocalPlayer.Character.Humanoid
+	humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+	wait(0.1)
+	pl.CFrame = location
+	end)
+end
+coroutine.wrap(POTZNJ_fake_script)()
+local function JHVVXM_fake_script() -- CityPortal.LocalScript 
+	local script = Instance.new('LocalScript', CityPortal)
+
+	disabled = false
+	
+	script.Parent.MouseButton1Click:connect(function()
+	local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
+	local location = CFrame.new(-7997.77, 4009.25, -6058.58)
+	local humanoid = game.Players.LocalPlayer.Character.Humanoid
+	humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+	wait(0.1)
+	pl.CFrame = location
+	end)
+end
+coroutine.wrap(JHVVXM_fake_script)()
+local function ZWRG_fake_script() -- HousePortal.LocalScript 
+	local script = Instance.new('LocalScript', HousePortal)
+
+	disabled = false
+	
+	script.Parent.MouseButton1Click:connect(function()
+	local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
+	local location = CFrame.new(-249.831, 33.5361, -1784.11)
+	local humanoid = game.Players.LocalPlayer.Character.Humanoid
+	humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+	wait(0.1)
+	pl.CFrame = location
+	end)
+end
+coroutine.wrap(ZWRG_fake_script)()
+local function ULGCSVP_fake_script() -- TeleportsHead.Script 
+	local script = Instance.new('Script', TeleportsHead)
+
+	-- PUT THIS SCRIPT INTO THE PART UR GONNA MAKE RAINBOW --
+	-- If ur making text rainbow make TextColor3 to TextColor3 = ALSO PUT IT IN THE TEXT LABEL!!!! --
+	local Part = script.Parent
+	function zigzag(X) return math.acos(math.cos(X*math.pi))/math.pi end 
+	counter = 0 while wait(0.001) do Part.BackgroundColor3 = Color3.fromHSV(zigzag(counter),1,1) 
+	 counter = counter + 0.01 end
+end
+coroutine.wrap(ULGCSVP_fake_script)()
+local function VQINSTK_fake_script() -- TeleportsHead.Dragable 
+	local script = Instance.new('LocalScript', TeleportsHead)
+
+	script.Parent.Active = true
+	script.Parent.Draggable = true
+end
+coroutine.wrap(VQINSTK_fake_script)()
+local function DNLPBV_fake_script() -- Speed25.LocalScript 
+	local script = Instance.new('LocalScript', Speed25)
+
+	disabled = false
+	
+	script.Parent.MouseButton1Click:connect(function()
+	game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 50
+	end)
+end
+coroutine.wrap(DNLPBV_fake_script)()
+local function GKWAYLN_fake_script() -- Speed50.LocalScript 
+	local script = Instance.new('LocalScript', Speed50)
+
+	disabled = false
+	
+	script.Parent.MouseButton1Click:connect(function()
+	game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 75
+	end)
+end
+coroutine.wrap(GKWAYLN_fake_script)()
+local function LWJOH_fake_script() -- Jump25.LocalScript 
+	local script = Instance.new('LocalScript', Jump25)
+
+	disabled = false
+	
+	script.Parent.MouseButton1Click:connect(function()
+	game.Players.LocalPlayer.Character.Humanoid.JumpPower = 100
+	end)
+end
+coroutine.wrap(LWJOH_fake_script)()
+local function NCOOC_fake_script() -- Jump50.LocalScript 
+	local script = Instance.new('LocalScript', Jump50)
+
+	disabled = false
+	
+	script.Parent.MouseButton1Click:connect(function()
+	game.Players.LocalPlayer.Character.Humanoid.JumpPower = 150
+	end)
+end
+coroutine.wrap(NCOOC_fake_script)()
+local function LPPU_fake_script() -- InfJump.LocalScript 
+	local script = Instance.new('LocalScript', InfJump)
+
+	disabled = false
+	
+	script.Parent.MouseButton1Click:connect(function()
+	local Player = game:GetService'Players'.LocalPlayer;
+	local UIS = game:GetService'UserInputService';
+	
+	_G.JumpHeight = 50;
+	
+	function Action(Object, Function) if Object ~= nil then Function(Object); end end
+	
+	UIS.InputBegan:connect(function(UserInput)
+	    if UserInput.UserInputType == Enum.UserInputType.Keyboard and UserInput.KeyCode == Enum.KeyCode.Space then
+	        Action(Player.Character.Humanoid, function(self)
+	            if self:GetState() == Enum.HumanoidStateType.Jumping or self:GetState() == Enum.HumanoidStateType.Freefall then
+	                Action(self.Parent.HumanoidRootPart, function(self)
+	                    self.Velocity = Vector3.new(0, _G.JumpHeight, 0);
+	                end)
+	            end
+	        end)
+	    end
+	end)
+	end)
+end
+coroutine.wrap(LPPU_fake_script)()
+local function JPYUVK_fake_script() -- PlayerScriptsHead.Script 
+	local script = Instance.new('Script', PlayerScriptsHead)
+
+	-- PUT THIS SCRIPT INTO THE PART UR GONNA MAKE RAINBOW --
+	-- If ur making text rainbow make TextColor3 to TextColor3 = ALSO PUT IT IN THE TEXT LABEL!!!! --
+	local Part = script.Parent
+	function zigzag(X) return math.acos(math.cos(X*math.pi))/math.pi end 
+	counter = 0 while wait(0.001) do Part.BackgroundColor3 = Color3.fromHSV(zigzag(counter),1,1) 
+	 counter = counter + 0.01 end
+end
+coroutine.wrap(JPYUVK_fake_script)()
+local function ZQBJB_fake_script() -- PlayerScriptsHead.Dragable 
+	local script = Instance.new('LocalScript', PlayerScriptsHead)
+
+	script.Parent.Active = true
+	script.Parent.Draggable = true
+end
+coroutine.wrap(ZQBJB_fake_script)()
+local function BFRK_fake_script() -- AutoF.LocalScript 
+	local script = Instance.new('LocalScript', AutoF)
+
+	disabled = false
+		
+		script.Parent.MouseButton1Click:connect(function()
+		local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
+		local location = CFrame.new(-306.534, 23.1122, -1504.07)
+		local humanoid = game.Players.LocalPlayer.Character.Humanoid
+		humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+		wait(0.1)
+		pl.CFrame = location
+		end)
+		
+		script.Parent.MouseButton1Click:connect(function()
+		wait(3)
+		local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
+		local location = CFrame.new(-314.24, 19.9657, -1507.98)
+		local humanoid = game.Players.LocalPlayer.Character.Humanoid
+		wait(0.1)
+		pl.CFrame = location
+		end)
+		
+		script.Parent.MouseButton1Click:connect(function()
+		wait(10)
+		local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
+		local location = CFrame.new(3999.52, 3999.22, -8025.56)
+		local humanoid = game.Players.LocalPlayer.Character.Humanoid
+		wait(0.1)
+		pl.CFrame = location
+		end)
+		
+		script.Parent.MouseButton1Click:connect(function()
+		wait(15)
+		local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
+		local location = CFrame.new(4044.21, 4000.59, -8022.73)
+		local humanoid = game.Players.LocalPlayer.Character.Humanoid
+		wait(0.1)
+		pl.CFrame = location
+		end)
+		
+		script.Parent.MouseButton1Click:connect(function()
+		wait(60)
+		local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
+		local location = CFrame.new(4000, 3998.58, -7999)
+		local humanoid = game.Players.LocalPlayer.Character.Humanoid
+		wait(0.1)
+		pl.CFrame = location
+		end)
+end
+coroutine.wrap(BFRK_fake_script)()
+local function OSPXNY_fake_script() -- AutoFEat.LocalScript 
+	local script = Instance.new('LocalScript', AutoFEat)
+
+	disabled = false
+		
+		script.Parent.MouseButton1Click:connect(function()
+		local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
+		local location = CFrame.new(-178.598, 20.1469, -1742.2)
+		local humanoid = game.Players.LocalPlayer.Character.Humanoid
+		humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+		wait(0.1)
+		pl.CFrame = location
+		end)
+		
+		script.Parent.MouseButton1Click:connect(function()
+		wait(3)
+		local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
+		local location = CFrame.new(-176.823, 18.356, -1751.75)
+		local humanoid = game.Players.LocalPlayer.Character.Humanoid
+		wait(0.1)
+		pl.CFrame = location
+		end)
+		
+		script.Parent.MouseButton1Click:connect(function()
+		wait(10)
+		local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
+		local location = CFrame.new(-7987.59, 3996.49, -8060.51)
+		local humanoid = game.Players.LocalPlayer.Character.Humanoid
+		wait(0.1)
+		pl.CFrame = location
+		end)
+		
+		script.Parent.MouseButton1Click:connect(function()
+		wait(15)
+		local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
+		local location = CFrame.new(-8009.55, 3996.46, -8060.33)
+		local humanoid = game.Players.LocalPlayer.Character.Humanoid
+		wait(0.1)
+		pl.CFrame = location
+		end)
+		
+		script.Parent.MouseButton1Click:connect(function()
+		wait(15)
+		local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
+		local location = CFrame.new(-7900, 4000.08, -8001.07)
+		local humanoid = game.Players.LocalPlayer.Character.Humanoid
+		wait(0.1)
+		pl.CFrame = location
+		end)
+end
+coroutine.wrap(OSPXNY_fake_script)()
+local function UVDEEIK_fake_script() -- AutoFDrink.LocalScript 
+	local script = Instance.new('LocalScript', AutoFDrink)
+
+	disabled = false
+		
+		
+			script.Parent.MouseButton1Click:connect(function()
+			wait(2)
+			local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
+			local location = CFrame.new(-277.139, 17.6928, -1771.37)
+			local humanoid = game.Players.LocalPlayer.Character.Humanoid
+			humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+			wait(0.1)
+			pl.CFrame = location
+			end)
+		
+			script.Parent.MouseButton1Click:connect(function()
+			wait(15)
+			local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
+			local location = CFrame.new(-269.297, 20.1284, -1761.38)
+			local humanoid = game.Players.LocalPlayer.Character.Humanoid
+			wait(0.1)
+			pl.CFrame = location
+			end)
+		
+			script.Parent.MouseButton1Click:connect(function()
+			wait(15)
+			local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
+			local location = CFrame.new(-4003.21, 3997.28, -9999.1)
+			local humanoid = game.Players.LocalPlayer.Character.Humanoid
+			wait(0.1)
+			pl.CFrame = location
+			end)
+		
+			script.Parent.MouseButton1Click:connect(function()
+			wait(5)
+			local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
+			local location = CFrame.new(-3999.66, 3997.45, -10046.2)
+			local humanoid = game.Players.LocalPlayer.Character.Humanoid
+			wait(0.1)
+			pl.CFrame = location
+			end)
+		
+			script.Parent.MouseButton1Click:connect(function()
+			wait(20)
+			local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
+			local location = CFrame.new(-4000.21, 3997.28, -9999.1)
+			local humanoid = game.Players.LocalPlayer.Character.Humanoid
+			wait(0.1)
+			pl.CFrame = location
+			end)
+end
+coroutine.wrap(UVDEEIK_fake_script)()
+local function SAAGOGL_fake_script() -- AutoFarmHead.Script 
+	local script = Instance.new('Script', AutoFarmHead)
+
+	-- PUT THIS SCRIPT INTO THE PART UR GONNA MAKE RAINBOW --
+	-- If ur making text rainbow make TextColor3 to TextColor3 = ALSO PUT IT IN THE TEXT LABEL!!!! --
+	local Part = script.Parent
+	function zigzag(X) return math.acos(math.cos(X*math.pi))/math.pi end 
+	counter = 0 while wait(0.001) do Part.BackgroundColor3 = Color3.fromHSV(zigzag(counter),1,1) 
+	 counter = counter + 0.01 end
+end
+coroutine.wrap(SAAGOGL_fake_script)()

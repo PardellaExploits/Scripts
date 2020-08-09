@@ -1,0 +1,341 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local PastriezFucker = Instance.new("ScreenGui")
+local PastriezFucker_2 = Instance.new("Frame")
+local Buttons = Instance.new("Frame")
+local Airport = Instance.new("TextButton")
+local Registers = Instance.new("TextButton")
+local Obby = Instance.new("TextButton")
+local Kitchen = Instance.new("TextButton")
+local Merch = Instance.new("TextButton")
+local StaffLounge = Instance.new("TextButton")
+local DriveThru = Instance.new("TextButton")
+local VIPSeating = Instance.new("TextButton")
+local noobstaff = Instance.new("TextButton")
+local WaterPark = Instance.new("TextButton")
+local TextLabel = Instance.new("TextLabel")
+local TextLabel_2 = Instance.new("TextLabel")
+
+--Properties:
+
+PastriezFucker.Name = "PastriezFucker"
+PastriezFucker.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+PastriezFucker.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+PastriezFucker_2.Name = "PastriezFucker"
+PastriezFucker_2.Parent = PastriezFucker
+PastriezFucker_2.BackgroundColor3 = Color3.fromRGB(22, 22, 22)
+PastriezFucker_2.Position = UDim2.new(0.0497695841, 0, 0.0879284665, 0)
+PastriezFucker_2.Size = UDim2.new(0, 535, 0, 318)
+
+Buttons.Name = "Buttons"
+Buttons.Parent = PastriezFucker_2
+Buttons.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Buttons.Position = UDim2.new(0.017813025, 0, 0.0258695967, 0)
+Buttons.Size = UDim2.new(0, 518, 0, 300)
+
+Airport.Name = "Airport"
+Airport.Parent = Buttons
+Airport.BackgroundColor3 = Color3.fromRGB(22, 22, 22)
+Airport.Position = UDim2.new(0.0386100374, 0, 0.203333333, 0)
+Airport.Size = UDim2.new(0, 152, 0, 41)
+Airport.Style = Enum.ButtonStyle.RobloxRoundButton
+Airport.Font = Enum.Font.SourceSans
+Airport.Text = "Airport"
+Airport.TextColor3 = Color3.fromRGB(255, 255, 255)
+Airport.TextSize = 14.000
+
+Registers.Name = "Registers"
+Registers.Parent = Buttons
+Registers.BackgroundColor3 = Color3.fromRGB(22, 22, 22)
+Registers.Position = UDim2.new(0.0386100374, 0, 0.340000004, 0)
+Registers.Size = UDim2.new(0, 152, 0, 41)
+Registers.Style = Enum.ButtonStyle.RobloxRoundButton
+Registers.Font = Enum.Font.SourceSans
+Registers.Text = "Registers"
+Registers.TextColor3 = Color3.fromRGB(255, 255, 255)
+Registers.TextSize = 14.000
+
+Obby.Name = "Obby"
+Obby.Parent = Buttons
+Obby.BackgroundColor3 = Color3.fromRGB(22, 22, 22)
+Obby.Position = UDim2.new(0.0386100374, 0, 0.476666659, 0)
+Obby.Size = UDim2.new(0, 152, 0, 41)
+Obby.Style = Enum.ButtonStyle.RobloxRoundButton
+Obby.Font = Enum.Font.SourceSans
+Obby.Text = "Obby"
+Obby.TextColor3 = Color3.fromRGB(255, 255, 255)
+Obby.TextSize = 14.000
+
+Kitchen.Name = "Kitchen"
+Kitchen.Parent = Buttons
+Kitchen.BackgroundColor3 = Color3.fromRGB(22, 22, 22)
+Kitchen.Position = UDim2.new(0.0386100374, 0, 0.613333285, 0)
+Kitchen.Size = UDim2.new(0, 152, 0, 41)
+Kitchen.Style = Enum.ButtonStyle.RobloxRoundButton
+Kitchen.Font = Enum.Font.SourceSans
+Kitchen.Text = "Kitchen"
+Kitchen.TextColor3 = Color3.fromRGB(255, 255, 255)
+Kitchen.TextSize = 14.000
+
+Merch.Name = "Merch"
+Merch.Parent = Buttons
+Merch.BackgroundColor3 = Color3.fromRGB(22, 22, 22)
+Merch.Position = UDim2.new(0.0386100374, 0, 0.74999994, 0)
+Merch.Size = UDim2.new(0, 152, 0, 41)
+Merch.Style = Enum.ButtonStyle.RobloxRoundButton
+Merch.Font = Enum.Font.SourceSans
+Merch.Text = "Merch"
+Merch.TextColor3 = Color3.fromRGB(255, 255, 255)
+Merch.TextSize = 14.000
+
+StaffLounge.Name = "StaffLounge"
+StaffLounge.Parent = Buttons
+StaffLounge.BackgroundColor3 = Color3.fromRGB(22, 22, 22)
+StaffLounge.Position = UDim2.new(0.66795367, 0, 0.74999994, 0)
+StaffLounge.Size = UDim2.new(0, 152, 0, 41)
+StaffLounge.Style = Enum.ButtonStyle.RobloxRoundButton
+StaffLounge.Font = Enum.Font.SourceSans
+StaffLounge.Text = "Staff Lounge"
+StaffLounge.TextColor3 = Color3.fromRGB(255, 255, 255)
+StaffLounge.TextSize = 14.000
+
+DriveThru.Name = "DriveThru"
+DriveThru.Parent = Buttons
+DriveThru.BackgroundColor3 = Color3.fromRGB(22, 22, 22)
+DriveThru.Position = UDim2.new(0.66795367, 0, 0.613333285, 0)
+DriveThru.Size = UDim2.new(0, 152, 0, 41)
+DriveThru.Style = Enum.ButtonStyle.RobloxRoundButton
+DriveThru.Font = Enum.Font.SourceSans
+DriveThru.Text = "Drive Thru"
+DriveThru.TextColor3 = Color3.fromRGB(255, 255, 255)
+DriveThru.TextSize = 14.000
+
+VIPSeating.Name = "VIPSeating"
+VIPSeating.Parent = Buttons
+VIPSeating.BackgroundColor3 = Color3.fromRGB(22, 22, 22)
+VIPSeating.Position = UDim2.new(0.66795367, 0, 0.476666659, 0)
+VIPSeating.Size = UDim2.new(0, 152, 0, 41)
+VIPSeating.Style = Enum.ButtonStyle.RobloxRoundButton
+VIPSeating.Font = Enum.Font.SourceSans
+VIPSeating.Text = "VIP Seating"
+VIPSeating.TextColor3 = Color3.fromRGB(255, 255, 255)
+VIPSeating.TextSize = 14.000
+
+noobstaff.Name = "noobstaff"
+noobstaff.Parent = Buttons
+noobstaff.BackgroundColor3 = Color3.fromRGB(22, 22, 22)
+noobstaff.Position = UDim2.new(0.66795367, 0, 0.340000004, 0)
+noobstaff.Size = UDim2.new(0, 152, 0, 41)
+noobstaff.Style = Enum.ButtonStyle.RobloxRoundButton
+noobstaff.Font = Enum.Font.SourceSans
+noobstaff.Text = "idiot staff standing spot"
+noobstaff.TextColor3 = Color3.fromRGB(255, 255, 255)
+noobstaff.TextSize = 14.000
+
+WaterPark.Name = "WaterPark"
+WaterPark.Parent = Buttons
+WaterPark.BackgroundColor3 = Color3.fromRGB(22, 22, 22)
+WaterPark.Position = UDim2.new(0.66795367, 0, 0.203333333, 0)
+WaterPark.Size = UDim2.new(0, 152, 0, 41)
+WaterPark.Style = Enum.ButtonStyle.RobloxRoundButton
+WaterPark.Font = Enum.Font.SourceSans
+WaterPark.Text = "Water Park"
+WaterPark.TextColor3 = Color3.fromRGB(255, 255, 255)
+WaterPark.TextSize = 14.000
+
+TextLabel.Parent = Buttons
+TextLabel.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.Position = UDim2.new(0.303088814, 0, 0.0366666652, 0)
+TextLabel.Size = UDim2.new(0, 200, 0, 50)
+TextLabel.Font = Enum.Font.GothamBlack
+TextLabel.Text = "Pastriez Fucker"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextSize = 14.000
+
+TextLabel_2.Parent = Buttons
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.Position = UDim2.new(0.559845567, 0, 0.863333344, 0)
+TextLabel_2.Size = UDim2.new(0, 200, 0, 50)
+TextLabel_2.Font = Enum.Font.GothamBlack
+TextLabel_2.Text = "by penguin from club penguin#5673"
+TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.TextSize = 14.000
+
+-- Scripts:
+
+local function YYGU_fake_script() -- Airport.LocalScript 
+    local script = Instance.new('LocalScript', Airport)
+
+    disabled = false
+    
+    script.Parent.MouseButton1Click:connect(function()
+    local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
+    local location = CFrame.new(176.291, 17.8402, -409.815)
+    local humanoid = game.Players.LocalPlayer.Character.Humanoid
+    humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+    wait(0.1)
+    pl.CFrame = location
+        
+    KickPlayerIfNotRanked:Remove();
+    end)
+end
+coroutine.wrap(YYGU_fake_script)()
+local function PVPJAGW_fake_script() -- Registers.LocalScript 
+    local script = Instance.new('LocalScript', Registers)
+
+    disabled = false
+    
+    script.Parent.MouseButton1Click:connect(function()
+    local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
+    local location = CFrame.new(-7.57635, 12, -100.111)
+    local humanoid = game.Players.LocalPlayer.Character.Humanoid
+    humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+    wait(0.1)
+    pl.CFrame = location
+        
+    KickPlayerIfNotRanked:Remove();
+    end)
+end
+coroutine.wrap(PVPJAGW_fake_script)()
+local function LFOL_fake_script() -- Obby.LocalScript 
+    local script = Instance.new('LocalScript', Obby)
+
+    disabled = false
+    
+    script.Parent.MouseButton1Click:connect(function()
+    local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
+    local location = CFrame.new(-68.8835, -3.01316, -159.02)
+    local humanoid = game.Players.LocalPlayer.Character.Humanoid
+    humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+    wait(0.1)
+    pl.CFrame = location
+        
+    KickPlayerIfNotRanked:Remove();
+    end)
+end
+coroutine.wrap(LFOL_fake_script)()
+local function XGLE_fake_script() -- Kitchen.LocalScript 
+    local script = Instance.new('LocalScript', Kitchen)
+
+    disabled = false
+    
+    script.Parent.MouseButton1Click:connect(function()
+    local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
+    local location = CFrame.new(16.3329, 21.9241, -116.691)
+    local humanoid = game.Players.LocalPlayer.Character.Humanoid
+    humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+    wait(0.1)
+    pl.CFrame = location
+        
+    KickPlayerIfNotRanked:Destroy();
+    end)
+end
+coroutine.wrap(XGLE_fake_script)()
+local function JLAXBH_fake_script() -- Merch.LocalScript 
+    local script = Instance.new('LocalScript', Merch)
+
+    disabled = false
+    
+    script.Parent.MouseButton1Click:connect(function()
+    local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
+    local location = CFrame.new(-114.071, 15.4972, 15.4904)
+    local humanoid = game.Players.LocalPlayer.Character.Humanoid
+    humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+    wait(0.1)
+    pl.CFrame = location
+        
+    KickPlayerIfNotRanked:Remove();
+    end)
+end
+coroutine.wrap(JLAXBH_fake_script)()
+local function LTCD_fake_script() -- StaffLounge.LocalScript 
+    local script = Instance.new('LocalScript', StaffLounge)
+
+    disabled = false
+    
+    script.Parent.MouseButton1Click:connect(function()
+    local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
+    local location = CFrame.new(290.618, 16.0625, 32.8809)
+    local humanoid = game.Players.LocalPlayer.Character.Humanoid
+    humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+    wait(0.1)
+    pl.CFrame = location
+        
+    KickPlayerIfNotRanked:Remove();
+    end)
+end
+coroutine.wrap(LTCD_fake_script)()
+local function QWYH_fake_script() -- DriveThru.LocalScript 
+    local script = Instance.new('LocalScript', DriveThru)
+
+    disabled = false
+    
+    script.Parent.MouseButton1Click:connect(function()
+    local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
+    local location = CFrame.new(50.2405, 15.3812, -46.564)
+    local humanoid = game.Players.LocalPlayer.Character.Humanoid
+    humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+    wait(0.1)
+    pl.CFrame = location
+        
+    KickPlayerIfNotRanked:Remove();
+    end)
+end
+coroutine.wrap(QWYH_fake_script)()
+local function KMLD_fake_script() -- VIPSeating.LocalScript 
+    local script = Instance.new('LocalScript', VIPSeating)
+
+    disabled = false
+    
+    script.Parent.MouseButton1Click:connect(function()
+    local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
+    local location = CFrame.new(-47.0198, 31.9781, -168.346)
+    local humanoid = game.Players.LocalPlayer.Character.Humanoid
+    humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+    wait(0.1)
+    pl.CFrame = location
+        
+    KickPlayerIfNotRanked:Remove();
+    end)
+end
+coroutine.wrap(KMLD_fake_script)()
+local function DDLFGP_fake_script() -- noobstaff.LocalScript 
+    local script = Instance.new('LocalScript', noobstaff)
+
+    disabled = false
+    
+    script.Parent.MouseButton1Click:connect(function()
+    local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
+    local location = CFrame.new(-28.6334, 15.9104, -131.46)
+    local humanoid = game.Players.LocalPlayer.Character.Humanoid
+    humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+    wait(0.1)
+    pl.CFrame = location
+        
+    KickPlayerIfNotRanked:Remove();
+    end)
+end
+coroutine.wrap(DDLFGP_fake_script)()
+local function WVICWYV_fake_script() -- WaterPark.LocalScript 
+    local script = Instance.new('LocalScript', WaterPark)
+
+    disabled = false
+    
+    script.Parent.MouseButton1Click:connect(function()
+    local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
+    local location = CFrame.new(38.884, 15.1813, 29.4292)
+    local humanoid = game.Players.LocalPlayer.Character.Humanoid
+    humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+    wait(0.1)
+    pl.CFrame = location
+        
+    KickPlayerIfNotRanked:Remove();
+    end)
+end
+coroutine.wrap(WVICWYV_fake_script)()
