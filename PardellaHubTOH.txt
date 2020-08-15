@@ -1,0 +1,2552 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local PardellaHub = Instance.new("ScreenGui")
+local Frame = Instance.new("ImageButton")
+local Pardella = Instance.new("TextLabel")
+local Frame2 = Instance.new("ImageButton")
+local Pardella_2 = Instance.new("TextLabel")
+local Pardella_3 = Instance.new("TextLabel")
+local Win = Instance.new("TextButton")
+local Btools = Instance.new("TextButton")
+local AutoFarm = Instance.new("TextButton")
+local RemoveKillParts = Instance.new("TextButton")
+local InfiniteJump = Instance.new("TextButton")
+local JumpHeight = Instance.new("TextButton")
+local ResetJump = Instance.new("TextButton")
+local Credit = Instance.new("TextButton")
+local Frame3 = Instance.new("ImageButton")
+local TOHAutoFarm = Instance.new("TextLabel")
+local AutoFarm_2 = Instance.new("TextButton")
+
+--Properties:
+
+PardellaHub.Name = "Pardella Hub"
+PardellaHub.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+PardellaHub.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Frame.Name = "Frame"
+Frame.Parent = PardellaHub
+Frame.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+Frame.BackgroundTransparency = 1.000
+Frame.Position = UDim2.new(0.412460625, 0, 0.99994117, 0)
+Frame.Size = UDim2.new(0, 324, 0, 80)
+Frame.Image = "rbxassetid://2790389767"
+Frame.ImageColor3 = Color3.fromRGB(35, 35, 35)
+Frame.ScaleType = Enum.ScaleType.Slice
+Frame.SliceCenter = Rect.new(8, 8, 248, 248)
+
+Pardella.Name = "Pardella"
+Pardella.Parent = Frame
+Pardella.Active = true
+Pardella.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Pardella.BackgroundTransparency = 1.000
+Pardella.Position = UDim2.new(0.19135803, 0, 0.1875, 0)
+Pardella.Size = UDim2.new(0, 200, 0, 50)
+Pardella.Font = Enum.Font.GothamBold
+Pardella.Text = "Pardella Hub"
+Pardella.TextColor3 = Color3.fromRGB(234, 234, 234)
+Pardella.TextSize = 18.000
+
+Frame2.Name = "Frame2"
+Frame2.Parent = PardellaHub
+Frame2.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+Frame2.BackgroundTransparency = 1.000
+Frame2.Position = UDim2.new(15, 0, 0.211999997, 0)
+Frame2.Size = UDim2.new(0, 372, 0, 467)
+Frame2.Image = "rbxassetid://2790389767"
+Frame2.ImageColor3 = Color3.fromRGB(35, 35, 35)
+Frame2.ScaleType = Enum.ScaleType.Slice
+Frame2.SliceCenter = Rect.new(8, 8, 248, 248)
+Frame2.Active = true
+Frame2.Draggable = true
+
+Pardella_2.Name = "Pardella"
+Pardella_2.Parent = Frame2
+Pardella_2.Active = true
+Pardella_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Pardella_2.BackgroundTransparency = 1.000
+Pardella_2.Position = UDim2.new(-0.0667064786, 0, -0.000936836004, 0)
+Pardella_2.Size = UDim2.new(0, 200, 0, 50)
+Pardella_2.Font = Enum.Font.GothamBold
+Pardella_2.Text = "Pardella Hub"
+Pardella_2.TextColor3 = Color3.fromRGB(234, 234, 234)
+Pardella_2.TextSize = 18.000
+
+Pardella_3.Name = "Pardella"
+Pardella_3.Parent = Frame2
+Pardella_3.Active = true
+Pardella_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Pardella_3.BackgroundTransparency = 1.000
+Pardella_3.Position = UDim2.new(-0.061330121, 0, 0.0140524628, 0)
+Pardella_3.Size = UDim2.new(0, 194, 0, 50)
+Pardella_3.Font = Enum.Font.GothamBold
+Pardella_3.Text = "____________"
+Pardella_3.TextColor3 = Color3.fromRGB(234, 234, 234)
+Pardella_3.TextSize = 18.000
+
+Win.Name = "Win"
+Win.Parent = Frame2
+Win.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Win.Position = UDim2.new(0.0456989221, 0, 0.119914345, 0)
+Win.Size = UDim2.new(0, 337, 0, 50)
+Win.Style = Enum.ButtonStyle.RobloxButton
+Win.Font = Enum.Font.GothamBold
+Win.Text = "Win"
+Win.TextColor3 = Color3.fromRGB(255, 255, 255)
+Win.TextSize = 14.000
+Win.MouseButton1Click:connect(function()
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(0.5)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.start.floor.floor.CFrame
+end)
+
+Btools.Name = "Btools"
+Btools.Parent = Frame2
+Btools.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Btools.Position = UDim2.new(0.0456989221, 0, 0.226980716, 0)
+Btools.Size = UDim2.new(0, 337, 0, 50)
+Btools.Style = Enum.ButtonStyle.RobloxButton
+Btools.Font = Enum.Font.GothamBold
+Btools.Text = "Btools"
+Btools.TextColor3 = Color3.fromRGB(255, 255, 255)
+Btools.TextSize = 14.000
+Btools.MouseButton1Click:connect(function()
+Instance.new("HopperBin", game.Players.LocalPlayer.Backpack).BinType = 2
+Instance.new("HopperBin", game.Players.LocalPlayer.Backpack).BinType = 3
+Instance.new("HopperBin", game.Players.LocalPlayer.Backpack).BinType = 4
+end)
+
+AutoFarm.Name = "AutoFarm"
+AutoFarm.Parent = Frame2
+AutoFarm.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+AutoFarm.Position = UDim2.new(0.0456989221, 0, 0.334047079, 0)
+AutoFarm.Size = UDim2.new(0, 337, 0, 50)
+AutoFarm.Style = Enum.ButtonStyle.RobloxButton
+AutoFarm.Font = Enum.Font.GothamBold
+AutoFarm.Text = "Auto Farm"
+AutoFarm.TextColor3 = Color3.fromRGB(255, 255, 255)
+AutoFarm.TextSize = 14.000
+AutoFarm.MouseButton1Click:connect(function()
+Frame3:TweenPosition(UDim2.new(0.108, 0,0.866, 0), 'Out', 'Quart', 1)
+end)
+
+RemoveKillParts.Name = "RemoveKillParts"
+RemoveKillParts.Parent = Frame2
+RemoveKillParts.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+RemoveKillParts.Position = UDim2.new(0.0456989221, 0, 0.441113472, 0)
+RemoveKillParts.Size = UDim2.new(0, 337, 0, 50)
+RemoveKillParts.Style = Enum.ButtonStyle.RobloxButton
+RemoveKillParts.Font = Enum.Font.GothamBold
+RemoveKillParts.Text = "Remove Kill Parts"
+RemoveKillParts.TextColor3 = Color3.fromRGB(255, 255, 255)
+RemoveKillParts.TextSize = 14.000
+
+InfiniteJump.Name = "InfiniteJump"
+InfiniteJump.Parent = Frame2
+InfiniteJump.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+InfiniteJump.Position = UDim2.new(0.0456989221, 0, 0.548179865, 0)
+InfiniteJump.Size = UDim2.new(0, 337, 0, 50)
+InfiniteJump.Style = Enum.ButtonStyle.RobloxButton
+InfiniteJump.Font = Enum.Font.GothamBold
+InfiniteJump.Text = "Infinite jump"
+InfiniteJump.TextColor3 = Color3.fromRGB(255, 255, 255)
+InfiniteJump.TextSize = 14.000
+InfiniteJump.MouseButton1Click:connect(function()
+local Player = game:GetService'Players'.LocalPlayer;
+local UIS = game:GetService'UserInputService';
+
+_G.JumpHeight = 50;
+
+function Action(Object, Function) if Object ~= nil then Function(Object); end end
+
+UIS.InputBegan:connect(function(UserInput)
+    if UserInput.UserInputType == Enum.UserInputType.Keyboard and UserInput.KeyCode == Enum.KeyCode.Space then
+        Action(Player.Character.Humanoid, function(self)
+            if self:GetState() == Enum.HumanoidStateType.Jumping or self:GetState() == Enum.HumanoidStateType.Freefall then
+                Action(self.Parent.HumanoidRootPart, function(self)
+                    self.Velocity = Vector3.new(0, _G.JumpHeight, 0);
+                end)
+            end
+        end)
+    end
+end)
+end)
+
+JumpHeight.Name = "JumpHeight"
+JumpHeight.Parent = Frame2
+JumpHeight.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+JumpHeight.Position = UDim2.new(0.0456989221, 0, 0.655246258, 0)
+JumpHeight.Size = UDim2.new(0, 337, 0, 50)
+JumpHeight.Style = Enum.ButtonStyle.RobloxButton
+JumpHeight.Font = Enum.Font.GothamBold
+JumpHeight.Text = "Jump Height +50"
+JumpHeight.TextColor3 = Color3.fromRGB(255, 255, 255)
+JumpHeight.TextSize = 14.000
+JumpHeight.MouseButton1Click:connect(function()
+    game.Players.LocalPlayer.Character.Humanoid.JumpPower = 150 --What the jump power changes to when you click the jump power button.
+end)
+
+ResetJump.Name = "ResetJump"
+ResetJump.Parent = Frame2
+ResetJump.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+ResetJump.Position = UDim2.new(0.0456989221, 0, 0.762312651, 0)
+ResetJump.Size = UDim2.new(0, 337, 0, 50)
+ResetJump.Style = Enum.ButtonStyle.RobloxButton
+ResetJump.Font = Enum.Font.GothamBold
+ResetJump.Text = "Reset Jump"
+ResetJump.TextColor3 = Color3.fromRGB(255, 255, 255)
+ResetJump.TextSize = 14.000
+ResetJump.MouseButton1Click:connect(function()
+    game.Players.LocalPlayer.Character.Humanoid.JumpPower = 50 --What the jump power changes to when you click the jump power button.
+end)
+
+Credit.Name = "Credit"
+Credit.Parent = Frame2
+Credit.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Credit.Position = UDim2.new(0.0456989221, 0, 0.869379044, 0)
+Credit.Size = UDim2.new(0, 337, 0, 50)
+Credit.Style = Enum.ButtonStyle.RobloxButton
+Credit.Font = Enum.Font.GothamBold
+Credit.Text = "Credits"
+Credit.TextColor3 = Color3.fromRGB(255, 255, 255)
+Credit.TextSize = 14.000
+Credit.MouseButton1Click:connect(function()
+local NotificationBindable = Instance.new("BindableFunction")
+    NotificationBindable.OnInvoke = callback
+    
+    game.StarterGui:SetCore("SendNotification", {
+    Title    = "Thanks!";
+    Text     = "Made by Pardella Exploits";
+    Duration = 15;
+    })
+end)
+
+Frame3.Name = "Frame3"
+Frame3.Parent = PardellaHub
+Frame3.Active = false
+Frame3.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+Frame3.BackgroundTransparency = 1.000
+Frame3.Position = UDim2.new(0.110114843, 0, 0.99994117, 0)
+Frame3.Size = UDim2.new(0, 324, 0, 77)
+Frame3.Image = "rbxassetid://2790389767"
+Frame3.ImageColor3 = Color3.fromRGB(35, 35, 35)
+Frame3.ScaleType = Enum.ScaleType.Slice
+Frame3.SliceCenter = Rect.new(8, 8, 248, 248)
+Frame3.Active = true
+Frame3.Draggable = true
+
+TOHAutoFarm.Name = "TOHAutoFarm"
+TOHAutoFarm.Parent = Frame3
+TOHAutoFarm.Active = true
+TOHAutoFarm.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TOHAutoFarm.BackgroundTransparency = 1.000
+TOHAutoFarm.Position = UDim2.new(0.0493827164, 0, -0.124188296, 0)
+TOHAutoFarm.Size = UDim2.new(0, 200, 0, 50)
+TOHAutoFarm.Font = Enum.Font.GothamBold
+TOHAutoFarm.Text = "Tower of Hell Auto Farm:"
+TOHAutoFarm.TextColor3 = Color3.fromRGB(234, 234, 234)
+TOHAutoFarm.TextSize = 18.000
+
+AutoFarm_2.Name = "AutoFarm"
+AutoFarm_2.Parent = Frame3
+AutoFarm_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AutoFarm_2.Position = UDim2.new(0.0493827164, 0, 0.395292222, 0)
+AutoFarm_2.Size = UDim2.new(0, 295, 0, 36)
+AutoFarm_2.Style = Enum.ButtonStyle.RobloxButton
+AutoFarm_2.Font = Enum.Font.GothamBold
+AutoFarm_2.Text = "Toggle"
+AutoFarm_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+AutoFarm_2.TextSize = 14.000
+AutoFarm_2.MouseButton1Click:connect(function()
+local NotificationBindable = Instance.new("BindableFunction")
+    NotificationBindable.OnInvoke = callback
+    
+    game.StarterGui:SetCore("SendNotification", {
+    Title    = "Bypassing";
+    Text     = "Bypassing by waiting..";
+    Duration = 15;
+    })
+wait(15)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.start.floor.floor.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.start.floor.floor.CFrame
+wait(420)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.start.floor.floor.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.start.floor.floor.CFrame
+wait(420)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.start.floor.floor.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.start.floor.floor.CFrame
+wait(420)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.start.floor.floor.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.start.floor.floor.CFrame
+wait(420)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.start.floor.floor.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.start.floor.floor.CFrame
+wait(420)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.start.floor.floor.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.start.floor.floor.CFrame
+wait(420)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.start.floor.floor.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.start.floor.floor.CFrame
+wait(420)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.start.floor.floor.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.start.floor.floor.CFrame
+wait(420)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.start.floor.floor.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.start.floor.floor.CFrame
+wait(420)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.start.floor.floor.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.start.floor.floor.CFrame
+wait(420)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.start.floor.floor.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.start.floor.floor.CFrame
+wait(420)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.start.floor.floor.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.start.floor.floor.CFrame
+wait(420)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.start.floor.floor.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.start.floor.floor.CFrame
+wait(420)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.start.floor.floor.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.start.floor.floor.CFrame
+wait(420)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.start.floor.floor.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.start.floor.floor.CFrame
+wait(420)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.start.floor.floor.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.start.floor.floor.CFrame
+wait(420)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.start.floor.floor.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.start.floor.floor.CFrame
+wait(420)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.start.floor.floor.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.start.floor.floor.CFrame
+wait(420)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.start.floor.floor.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.start.floor.floor.CFrame
+wait(420)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.start.floor.floor.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.start.floor.floor.CFrame
+wait(420)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.start.floor.floor.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.start.floor.floor.CFrame
+wait(420)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.start.floor.floor.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.start.floor.floor.CFrame
+wait(420)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.start.floor.floor.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.start.floor.floor.CFrame
+wait(420)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.start.floor.floor.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.start.floor.floor.CFrame
+wait(420)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.start.floor.floor.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.start.floor.floor.CFrame
+wait(420)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.finish.FinishGlow.CFrame
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.start.floor.floor.CFrame
+wait(1)
+game.Workspace.pardellaxploits.HumanoidRootPart.CFrame = game.Workspace.tower.sections.start.floor.floor.CFrame
+wait(420)
+end)
+
+
+-- Scripts:
+
+local function JDDVBUA_fake_script() -- PardellaHub.Script 
+    local script = Instance.new('Script', PardellaHub)
+
+    local Frame = script.Parent.Frame
+    local Frame2 = script.Parent.Frame2
+    wait(1)
+     Frame:TweenPosition(UDim2.new(0.413, 0,0.422, 0), 'Out', 'Quart', 1)
+    wait(5)
+    Frame:TweenPosition(UDim2.new(0.412, 0,1, 0), 'Out', 'Quart', 1)
+    wait(2)
+    Frame2:TweenPosition(UDim2.new(0.021, 0,0.209, 0), 'Out', 'Quart', 1)
+end
+coroutine.wrap(JDDVBUA_fake_script)()
