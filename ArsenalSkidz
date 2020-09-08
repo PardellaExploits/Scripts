@@ -1,0 +1,760 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ArsenalSkidz = Instance.new("ScreenGui")
+local IntroGUI = Instance.new("Frame")
+local S = Instance.new("TextLabel")
+local A = Instance.new("TextLabel")
+local MainGUI = Instance.new("Frame")
+local MainFrame = Instance.new("ImageButton")
+local S_2 = Instance.new("TextLabel")
+local A_2 = Instance.new("TextLabel")
+local AimBot = Instance.new("ImageButton")
+local AimbotLabel = Instance.new("TextLabel")
+local ESP = Instance.new("ImageButton")
+local ESPLabel = Instance.new("TextLabel")
+local KillAll = Instance.new("ImageButton")
+local KillAllLabel = Instance.new("TextLabel")
+local MainLabel = Instance.new("TextLabel")
+local Close = Instance.new("ImageButton")
+local CloseLabel = Instance.new("TextLabel")
+local Notification = Instance.new("Frame")
+local NotificationFrame = Instance.new("ImageButton")
+local NotificationLabel = Instance.new("TextLabel")
+local Underline = Instance.new("TextLabel")
+local Credits = Instance.new("TextLabel")
+local DiscordPromo = Instance.new("TextLabel")
+local DiscordLink = Instance.new("TextLabel")
+local DurationLabel = Instance.new("TextLabel")
+
+--Properties:
+
+ArsenalSkidz.Name = "ArsenalSkidz"
+ArsenalSkidz.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ArsenalSkidz.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+IntroGUI.Name = "IntroGUI"
+IntroGUI.Parent = ArsenalSkidz
+IntroGUI.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+IntroGUI.BackgroundTransparency = 1.000
+IntroGUI.Position = UDim2.new(0.471126348, 0, 0.435504466, 0)
+IntroGUI.Size = UDim2.new(0, 100, 0, 100)
+
+S.Name = "S"
+S.Parent = IntroGUI
+S.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+S.BackgroundTransparency = 1.000
+S.BorderColor3 = Color3.fromRGB(27, 42, 53)
+S.Position = UDim2.new(0.340000033, 0, 0.0799999982, 0)
+S.Size = UDim2.new(0, 58, 0, 100)
+S.Font = Enum.Font.GothamBold
+S.Text = "S"
+S.TextColor3 = Color3.fromRGB(255, 123, 7)
+S.TextSize = 19.000
+
+A.Name = "A"
+A.Parent = IntroGUI
+A.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+A.BackgroundTransparency = 1.000
+A.BorderColor3 = Color3.fromRGB(27, 42, 53)
+A.Position = UDim2.new(0.149999991, 0, 0, 0)
+A.Size = UDim2.new(0, 58, 0, 100)
+A.Font = Enum.Font.GothamBold
+A.Text = "A"
+A.TextColor3 = Color3.fromRGB(255, 255, 255)
+A.TextSize = 27.000
+
+MainGUI.Name = "MainGUI"
+MainGUI.Parent = ArsenalSkidz
+MainGUI.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MainGUI.BackgroundTransparency = 1.000
+MainGUI.Position = UDim2.new(0.0263007432, 0, 0.068965517, 0)
+MainGUI.Size = UDim2.new(0, 351, 0, 139)
+MainGUI.Visible = false
+
+MainFrame.Name = "MainFrame"
+MainFrame.Parent = MainGUI
+MainFrame.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+MainFrame.BackgroundTransparency = 1.000
+MainFrame.Position = UDim2.new(-0.00218926673, 0, -0.00169976323, 0)
+MainFrame.Size = UDim2.new(0, 351, 0, 152)
+MainFrame.Image = "rbxassetid://2790389767"
+MainFrame.ImageColor3 = Color3.fromRGB(35, 35, 35)
+MainFrame.ScaleType = Enum.ScaleType.Slice
+MainFrame.SliceCenter = Rect.new(8, 8, 248, 248)
+
+S_2.Name = "S"
+S_2.Parent = MainFrame
+S_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+S_2.BackgroundTransparency = 1.000
+S_2.BorderColor3 = Color3.fromRGB(27, 42, 53)
+S_2.Position = UDim2.new(0.0494017452, 0, -0.164604321, 0)
+S_2.Size = UDim2.new(0, 58, 0, 100)
+S_2.Font = Enum.Font.GothamBold
+S_2.Text = "S"
+S_2.TextColor3 = Color3.fromRGB(255, 123, 7)
+S_2.TextSize = 19.000
+
+A_2.Name = "A"
+A_2.Parent = MainFrame
+A_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+A_2.BackgroundTransparency = 1.000
+A_2.BorderColor3 = Color3.fromRGB(27, 42, 53)
+A_2.Position = UDim2.new(-0.000997155905, 0, -0.208633095, 0)
+A_2.Size = UDim2.new(0, 58, 0, 100)
+A_2.Font = Enum.Font.GothamBold
+A_2.Text = "A"
+A_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+A_2.TextSize = 27.000
+
+AimBot.Name = "AimBot"
+AimBot.Parent = MainFrame
+AimBot.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+AimBot.BackgroundTransparency = 1.000
+AimBot.Position = UDim2.new(0.142079771, 0, 0.699678242, 0)
+AimBot.Size = UDim2.new(0, 249, 0, 25)
+AimBot.Image = "rbxassetid://2790389767"
+AimBot.ImageColor3 = Color3.fromRGB(45, 45, 45)
+AimBot.ScaleType = Enum.ScaleType.Slice
+AimBot.SliceCenter = Rect.new(8, 8, 248, 248)
+
+AimbotLabel.Name = "AimbotLabel"
+AimbotLabel.Parent = AimBot
+AimbotLabel.AnchorPoint = Vector2.new(0.5, 0.5)
+AimbotLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AimbotLabel.BackgroundTransparency = 1.000
+AimbotLabel.BorderSizePixel = 0
+AimbotLabel.Position = UDim2.new(0.498483926, 0, 0.5, 0)
+AimbotLabel.Size = UDim2.new(0.924999952, -5, 1, -5)
+AimbotLabel.Font = Enum.Font.GothamSemibold
+AimbotLabel.Text = "Aimbot"
+AimbotLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+AimbotLabel.TextSize = 14.000
+
+ESP.Name = "ESP"
+ESP.Parent = MainFrame
+ESP.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+ESP.BackgroundTransparency = 1.000
+ESP.Position = UDim2.new(0.142079756, 0, 0.489199251, 0)
+ESP.Size = UDim2.new(0, 249, 0, 25)
+ESP.Image = "rbxassetid://2790389767"
+ESP.ImageColor3 = Color3.fromRGB(45, 45, 45)
+ESP.ScaleType = Enum.ScaleType.Slice
+ESP.SliceCenter = Rect.new(8, 8, 248, 248)
+
+ESPLabel.Name = "ESPLabel"
+ESPLabel.Parent = ESP
+ESPLabel.AnchorPoint = Vector2.new(0.5, 0.5)
+ESPLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ESPLabel.BackgroundTransparency = 1.000
+ESPLabel.BorderSizePixel = 0
+ESPLabel.Position = UDim2.new(0.498483926, 0, 0.5, 0)
+ESPLabel.Size = UDim2.new(0.924999952, -5, 1, -5)
+ESPLabel.Font = Enum.Font.GothamSemibold
+ESPLabel.Text = "ESP"
+ESPLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+ESPLabel.TextSize = 14.000
+
+KillAll.Name = "KillAll"
+KillAll.Parent = MainFrame
+KillAll.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+KillAll.BackgroundTransparency = 1.000
+KillAll.Position = UDim2.new(0.142079756, 0, 0.27872026, 0)
+KillAll.Size = UDim2.new(0, 249, 0, 25)
+KillAll.Image = "rbxassetid://2790389767"
+KillAll.ImageColor3 = Color3.fromRGB(45, 45, 45)
+KillAll.ScaleType = Enum.ScaleType.Slice
+KillAll.SliceCenter = Rect.new(8, 8, 248, 248)
+
+KillAllLabel.Name = "KillAllLabel"
+KillAllLabel.Parent = KillAll
+KillAllLabel.AnchorPoint = Vector2.new(0.5, 0.5)
+KillAllLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+KillAllLabel.BackgroundTransparency = 1.000
+KillAllLabel.BorderSizePixel = 0
+KillAllLabel.Position = UDim2.new(0.498483926, 0, 0.5, 0)
+KillAllLabel.Size = UDim2.new(0.924999952, -5, 1, -5)
+KillAllLabel.Font = Enum.Font.GothamSemibold
+KillAllLabel.Text = "Kill All [E]"
+KillAllLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+KillAllLabel.TextSize = 14.000
+
+MainLabel.Name = "MainLabel"
+MainLabel.Parent = MainFrame
+MainLabel.AnchorPoint = Vector2.new(0.5, 0.5)
+MainLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MainLabel.BackgroundTransparency = 1.000
+MainLabel.BorderSizePixel = 0
+MainLabel.Position = UDim2.new(0.495634943, 0, 0.162741438, 0)
+MainLabel.Size = UDim2.new(0.924999952, -5, 0.209352449, -5)
+MainLabel.Font = Enum.Font.GothamSemibold
+MainLabel.Text = "Arsenal Skidz"
+MainLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+MainLabel.TextSize = 14.000
+
+Close.Name = "Close"
+Close.Parent = MainFrame
+Close.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+Close.BackgroundTransparency = 1.000
+Close.Position = UDim2.new(0.89706552, 0, 0.0680993199, 0)
+Close.Size = UDim2.new(0, 25, 0, 25)
+Close.Image = "rbxassetid://2790389767"
+Close.ImageColor3 = Color3.fromRGB(45, 45, 45)
+Close.ScaleType = Enum.ScaleType.Slice
+Close.SliceCenter = Rect.new(8, 8, 248, 248)
+
+CloseLabel.Name = "CloseLabel"
+CloseLabel.Parent = Close
+CloseLabel.AnchorPoint = Vector2.new(0.5, 0.5)
+CloseLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+CloseLabel.BackgroundTransparency = 1.000
+CloseLabel.BorderSizePixel = 0
+CloseLabel.Position = UDim2.new(0.498483926, 0, 0.5, 0)
+CloseLabel.Size = UDim2.new(0.924999952, -5, 1, -5)
+CloseLabel.Font = Enum.Font.GothamSemibold
+CloseLabel.Text = "X"
+CloseLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+CloseLabel.TextSize = 14.000
+
+Notification.Name = "Notification"
+Notification.Parent = ArsenalSkidz
+Notification.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Notification.BackgroundTransparency = 1.000
+Notification.Position = UDim2.new(0.37164095, 0, 0.111111112, 0)
+Notification.Size = UDim2.new(0, 435, 0, 164)
+Notification.Visible = false
+
+NotificationFrame.Name = "NotificationFrame"
+NotificationFrame.Parent = Notification
+NotificationFrame.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+NotificationFrame.BackgroundTransparency = 1.000
+NotificationFrame.Position = UDim2.new(-0.000772863626, 0, -0.00474254787, 0)
+NotificationFrame.Size = UDim2.new(0, 435, 0, 164)
+NotificationFrame.Image = "rbxassetid://2790389767"
+NotificationFrame.ImageColor3 = Color3.fromRGB(35, 35, 35)
+NotificationFrame.ScaleType = Enum.ScaleType.Slice
+NotificationFrame.SliceCenter = Rect.new(8, 8, 248, 248)
+
+NotificationLabel.Name = "NotificationLabel"
+NotificationLabel.Parent = NotificationFrame
+NotificationLabel.AnchorPoint = Vector2.new(0.5, 0.5)
+NotificationLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+NotificationLabel.BackgroundTransparency = 1.000
+NotificationLabel.BorderSizePixel = 0
+NotificationLabel.Position = UDim2.new(0.515725315, 0, 0.13109757, 0)
+NotificationLabel.Size = UDim2.new(0.214655057, -5, 0.201219514, -5)
+NotificationLabel.Font = Enum.Font.GothamSemibold
+NotificationLabel.Text = "Notification:"
+NotificationLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+NotificationLabel.TextSize = 14.000
+
+Underline.Name = "Underline"
+Underline.Parent = NotificationFrame
+Underline.AnchorPoint = Vector2.new(0.5, 0.5)
+Underline.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Underline.BackgroundTransparency = 1.000
+Underline.BorderSizePixel = 0
+Underline.Position = UDim2.new(0.508828759, 0, 0.198170751, 0)
+Underline.Size = UDim2.new(0.214655057, -5, 0.201219514, -5)
+Underline.Font = Enum.Font.GothamSemibold
+Underline.Text = "---------------------------"
+Underline.TextColor3 = Color3.fromRGB(255, 255, 255)
+Underline.TextSize = 14.000
+
+Credits.Name = "Credits"
+Credits.Parent = NotificationFrame
+Credits.AnchorPoint = Vector2.new(0.5, 0.5)
+Credits.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Credits.BackgroundTransparency = 1.000
+Credits.BorderSizePixel = 0
+Credits.Position = UDim2.new(0.514942527, 0, 0.355182916, 0)
+Credits.Size = UDim2.new(0.705747187, -5, 0.173780486, -5)
+Credits.Font = Enum.Font.GothamSemibold
+Credits.Text = "This script was created by Pardella Exploits!"
+Credits.TextColor3 = Color3.fromRGB(255, 255, 255)
+Credits.TextSize = 14.000
+
+DiscordPromo.Name = "DiscordPromo"
+DiscordPromo.Parent = NotificationFrame
+DiscordPromo.AnchorPoint = Vector2.new(0.5, 0.5)
+DiscordPromo.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+DiscordPromo.BackgroundTransparency = 1.000
+DiscordPromo.BorderSizePixel = 0
+DiscordPromo.Position = UDim2.new(0.514942527, 0, 0.495426834, 0)
+DiscordPromo.Size = UDim2.new(0.705747187, -5, 0.173780486, -5)
+DiscordPromo.Font = Enum.Font.GothamSemibold
+DiscordPromo.Text = "Make sure to join the discord:"
+DiscordPromo.TextColor3 = Color3.fromRGB(255, 255, 255)
+DiscordPromo.TextSize = 14.000
+
+DiscordLink.Name = "DiscordLink"
+DiscordLink.Parent = NotificationFrame
+DiscordLink.AnchorPoint = Vector2.new(0.5, 0.5)
+DiscordLink.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+DiscordLink.BackgroundTransparency = 1.000
+DiscordLink.BorderSizePixel = 0
+DiscordLink.Position = UDim2.new(0.514942527, 0, 0.873475611, 0)
+DiscordLink.Size = UDim2.new(0.705747187, -5, 0.173780486, -5)
+DiscordLink.Font = Enum.Font.GothamSemibold
+DiscordLink.Text = "https://discord.gg/8YQCNMC"
+DiscordLink.TextColor3 = Color3.fromRGB(255, 255, 255)
+DiscordLink.TextSize = 14.000
+
+DurationLabel.Name = "DurationLabel"
+DurationLabel.Parent = NotificationFrame
+DurationLabel.AnchorPoint = Vector2.new(0.5, 0.5)
+DurationLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+DurationLabel.BackgroundTransparency = 1.000
+DurationLabel.BorderSizePixel = 0
+DurationLabel.Position = UDim2.new(0.857471228, 0, 0.0685975626, 0)
+DurationLabel.Size = UDim2.new(0.705747187, -5, 0.173780486, -5)
+DurationLabel.Font = Enum.Font.GothamSemibold
+DurationLabel.Text = "Closing in 5 seconds.."
+DurationLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+DurationLabel.TextSize = 10.000
+
+-- Scripts:
+
+local function SZJDB_fake_script() -- ArsenalSkidz.Script 
+	local script = Instance.new('Script', ArsenalSkidz)
+
+	local IntroGUI = script.Parent.IntroGUI
+	local S = script.Parent.IntroGUI.S
+	local A = script.Parent.IntroGUI.A
+	local MainGUI = script.Parent.MainGUI
+	local Notification = script.Parent.Notification
+	
+	
+	for i = 1, 0, -.1 do
+		IntroGUI.BackgroundTransparency = i
+		wait()
+	end
+	
+	wait(7)
+	A.Visible = false
+	S.Visible = false;
+	for i = 0, 1, .1 do
+		IntroGUI.BackgroundTransparency = i
+		wait()
+	end
+	wait(2)
+	MainGUI.Visible = true;
+	Notification.Visible = true;
+	wait(5)
+	Notification.Visible = false;
+	
+end
+coroutine.wrap(SZJDB_fake_script)()
+local function HPPTP_fake_script() -- MainFrame.Dragify 
+	local script = Instance.new('LocalScript', MainFrame)
+
+	local UIS = game:GetService("UserInputService")
+	function dragify(Frame)
+	    dragToggle = nil
+	    local dragSpeed = 0.50
+	    dragInput = nil
+	    dragStart = nil
+	    local dragPos = nil
+	    function updateInput(input)
+	        local Delta = input.Position - dragStart
+	        local Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + Delta.X, startPos.Y.Scale, startPos.Y.Offset + Delta.Y)
+	        game:GetService("TweenService"):Create(Frame, TweenInfo.new(0.30), {Position = Position}):Play()
+	    end
+	    Frame.InputBegan:Connect(function(input)
+	        if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) and UIS:GetFocusedTextBox() == nil then
+	            dragToggle = true
+	            dragStart = input.Position
+	            startPos = Frame.Position
+	            input.Changed:Connect(function()
+	                if input.UserInputState == Enum.UserInputState.End then
+	                    dragToggle = false
+	                end
+	            end)
+	        end
+	    end)
+	    Frame.InputChanged:Connect(function(input)
+	        if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+	            dragInput = input
+	        end
+	    end)
+	    game:GetService("UserInputService").InputChanged:Connect(function(input)
+	        if input == dragInput and dragToggle then
+	            updateInput(input)
+	        end
+	    end)
+	end
+	
+	dragify(script.Parent)
+end
+coroutine.wrap(HPPTP_fake_script)()
+local function YSFXWS_fake_script() -- AimBot.LocalScript 
+	local script = Instance.new('LocalScript', AimBot)
+
+	local button = script.Parent.Parent.Parent.MainFrame.AimBot
+	local toggled = false
+	
+	local function onButtonActivated()
+		--[AimBot Settings]--
+		local FreeForAll = false
+		
+		local AimingFor = "Head"
+		
+		local AutoAim = false
+		
+		local Chams = true
+		
+		local PointToAiming = false
+		
+		local IgnoreFOV = false
+		--[End AimBot Settings]--
+		
+		--[AimBot HotKeys]--
+		local ModeSwitch = "Q" --Changes whether games FFA or TDM (shoot at all or only enemies).
+		
+		local AimSwitch = "E" --Change where to shoot at the 'Head' or 'HumanoidRootPart'.
+		
+		local AutoAimKey = "P" --Change whether you manually lockon or auto-lockon.
+		
+		local ChamSwitch = "T" --Change whether chams(esp) is disabled or enabled)
+		
+		local PointSwitch = "I" --Change wherer to render a line between you and who you're aiming at.
+		
+		local WallSwitch = "Y" --Change whether to be able to aim at people through walls.
+		--[End AimBot HotKeys]--
+		
+	--[[
+					NOTHING BELOW HERE NEEDS TO BE EDITED	
+					NOTHING BELOW HERE NEEDS TO BE EDITED	
+					NOTHING BELOW HERE NEEDS TO BE EDITED	
+					NOTHING BELOW HERE NEEDS TO BE EDITED	
+	--]]
+		
+	--[[
+		
+	  /$$$$$$                  /$$                 /$$       /$$$$$$$                       /$$$$$$                                  /$$                        
+	 /$$__  $$                | $$                | $$      | $$__  $$                     /$$__  $$                                | $$                        
+	| $$  \__/  /$$$$$$   /$$$$$$$  /$$$$$$   /$$$$$$$      | $$  \ $$ /$$   /$$ /$$      | $$  \__/  /$$$$$$$  /$$$$$$   /$$$$$$  /$$$$$$    /$$$$$$   /$$$$$$ 
+	| $$       /$$__  $$ /$$__  $$ /$$__  $$ /$$__  $$      | $$$$$$$ | $$  | $$|__/      |  $$$$$$  /$$_____/ |____  $$ /$$__  $$|_  $$_/   /$$__  $$ /$$__  $$
+	| $$      | $$  \ $$| $$  | $$| $$$$$$$$| $$  | $$      | $$__  $$| $$  | $$           \____  $$| $$        /$$$$$$$| $$  \ $$  | $$    | $$$$$$$$| $$  \__/
+	| $$    $$| $$  | $$| $$  | $$| $$_____/| $$  | $$      | $$  \ $$| $$  | $$ /$$       /$$  \ $$| $$       /$$__  $$| $$  | $$  | $$ /$$| $$_____/| $$      
+	|  $$$$$$/|  $$$$$$/|  $$$$$$$|  $$$$$$$|  $$$$$$$      | $$$$$$$/|  $$$$$$$|__/      |  $$$$$$/|  $$$$$$$|  $$$$$$$| $$$$$$$/  |  $$$$/|  $$$$$$$| $$      
+	 \______/  \______/  \_______/ \_______/ \_______/      |_______/  \____  $$           \______/  \_______/ \_______/| $$____/    \___/   \_______/|__/      
+	                                                                   /$$  | $$                                        | $$                                    
+	                                                                  |  $$$$$$/                                        | $$                                    
+	                                                                   \______/                                         |__/                                    
+	
+	--]]
+		
+		warn("[ScapAssist] Your Hotkeys Are: ModeSwitch["..ModeSwitch.."], AimSwitch["..AimSwitch.."], AutoAimKey["..AutoAimKey.."], ChamSwitch["..ChamSwitch.."], PointSwitch["..PointSwitch.."], WallSwitch["..WallSwitch.."]")
+		
+		--[Aimbot Hooks]--
+		local AimingAt = nil
+		
+		local Distance = 0
+		
+		local Camera = game.Workspace.CurrentCamera
+		
+		local Mouse = game.Players.LocalPlayer:GetMouse()
+		
+		local MouseDown = false
+		
+		local Vals = {}
+		
+		local Dist = {}
+		--[End Aimbot Hooks]--
+		
+		--[Aimbot Framework]--
+		game:GetService("RunService").RenderStepped:connect(function()
+			if game.Workspace:FindFirstChild(game.Players.LocalPlayer.Name) then
+				for i,c in pairs(Vals) do
+					table.remove(Vals, i)
+				end
+				for i,c in pairs(Dist) do
+					table.remove(Dist, i)
+				end
+				for _,v in pairs(game.Players:GetChildren()) do
+					if game.Workspace:FindFirstChild(v.Name) then
+						if FreeForAll == true then
+							if v.Name ~= game.Players.LocalPlayer.Name and v.Character:FindFirstChild("HumanoidRootPart") and v.Character:FindFirstChild(AimingFor) and game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart") then
+								local Distance = (game.Players.LocalPlayer.Character.HumanoidRootPart.Position-v.Character.HumanoidRootPart.Position).magnitude
+								local Position,Bool = Camera:WorldToScreenPoint(v.Character[AimingFor].Position)					
+								if IgnoreFOV == false then
+									if Bool == true then
+										table.insert(Vals, {v.Name, Distance})
+										table.insert(Dist, Distance)
+									end
+								else
+									table.insert(Vals, {v.Name, Distance})
+									table.insert(Dist, Distance)
+								end
+							end
+						elseif FreeForAll == false then
+							if v.Name ~= game.Players.LocalPlayer.Name and v.TeamColor ~= game.Players.LocalPlayer.TeamColor and v.Character:FindFirstChild("HumanoidRootPart") and v.Character:FindFirstChild(AimingFor) and game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart") then
+								local Distance = (game.Players.LocalPlayer.Character.HumanoidRootPart.Position-v.Character.HumanoidRootPart.Position).magnitude
+								local Position,Bool = Camera:WorldToScreenPoint(v.Character[AimingFor].Position)
+								if IgnoreFOV == false then
+									if Bool == true then
+										table.insert(Vals, {v.Name, Distance})
+										table.insert(Dist, Distance)
+									end
+								else
+									table.insert(Vals, {v.Name, Distance})
+									table.insert(Dist, Distance)
+								end
+							end
+						end
+					end
+				end
+				for _,t in pairs(Vals) do
+					if t[2] == math.min(unpack(Dist)) then
+						AimingAt = t[1]
+					end
+				end
+				if AutoAim == true or MouseDown == true and AimingAt ~= nil and game.Players[AimingAt].Character:FindFirstChild(AimingFor) and game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart") then
+					local Position,Bool = Camera:WorldToScreenPoint(game.Players[AimingAt].Character[AimingFor].Position)
+					if IgnoreFOV == true then
+						if game.Players[AimingAt].Character:FindFirstChild(AimingFor) then
+							Camera.CoordinateFrame = CFrame.new(Camera.Focus.p, game.Players[AimingAt].Character[AimingFor].Position)
+						end
+					elseif IgnoreFOV == false then
+						if game.Players[AimingAt].Character:FindFirstChild(AimingFor) and Bool == true then
+							Camera.CoordinateFrame = CFrame.new(Camera.Focus.p, game.Players[AimingAt].Character[AimingFor].Position)
+						end
+					end
+				end
+				
+				if PointToAiming and AimingAt ~= nil and game.Players[AimingAt].Character:FindFirstChild(AimingFor) and game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart") then
+					if game.Players[AimingAt].Character[AimingFor]:FindFirstChild("Attachment") then
+						game.Players[AimingAt].Character[AimingFor].Attachment:Destroy()
+					end
+					local Attach = Instance.new("Attachment")
+					Attach.Parent = game.Players[AimingAt].Character[AimingFor]
+					if game.Players.LocalPlayer.Character.HumanoidRootPart:FindFirstChild("Attachment") then
+						game.Players.LocalPlayer.Character.HumanoidRootPart.Attachment:Destroy()
+					end
+					local Attach2 = Instance.new("Attachment")
+					Attach.Parent = game.Players.LocalPlayer.Character.HumanoidRootPart
+					if game.Players.LocalPlayer.Character.HumanoidRootPart:FindFirstChild("RodConstraint") then
+						game.Players.LocalPlayer.Character.HumanoidRootPart.RodConstraint:Destroy()
+					end
+					local Con = Instance.new("RodConstraint")
+					Con.Attachment0 = Attach
+					Con.Attachment1 = Attach2
+					Con.Visible = true
+					Con.Thickness = 5
+					Con.Color = BrickColor.new("Lime green")
+					Con.Parent = game.Players.LocalPlayer.Character.HumanoidRootPart
+				elseif not PointToAiming then
+					if game.Players.LocalPlayer.Character.HumanoidRootPart:FindFirstChild("RodConstraint") then
+						game.Players.LocalPlayer.Character.HumanoidRootPart.RodConstraint:Destroy()
+					end
+				end
+				
+				if Chams and AimingAt ~= nil and game.Players.LocalPlayer.Character:FindFirstChild("Humanoid") then
+					for _,q in pairs(Camera:GetChildren()) do
+						if q:IsA("BoxHandleAdornment") then
+							q:Destroy()
+						end
+					end
+					for _,v in pairs(game.Players:GetChildren()) do
+						if v.Name ~= game.Players.LocalPlayer.Name and game.Workspace:FindFirstChild(v.Name) then
+							for _,c in pairs(v.Character:GetChildren()) do
+								if c:IsA("BasePart") then
+									if v.TeamColor == game.Players.LocalPlayer.TeamColor then
+										local esp = Instance.new("BoxHandleAdornment", Camera)
+										esp.Color3 = Color3.new(0, 255, 0)
+										esp.Size = c.Size
+										esp.AlwaysOnTop = true
+										esp.ZIndex = 1
+										esp.Adornee = c
+									elseif v.TeamColor ~= game.Players.LocalPlayer.TeamColor then
+										local esp = Instance.new("BoxHandleAdornment", Camera)
+										esp.Color3 = Color3.new(255, 0, 0)
+										esp.Size = c.Size
+										esp.AlwaysOnTop = true
+										esp.ZIndex = 1
+										esp.Adornee = c
+									end
+								end
+							end 
+						end
+					end
+				elseif not Chams then
+					for _,q in pairs(Camera:GetChildren()) do
+						if q:IsA("BoxHandleAdornment") then
+							q:Destroy()
+						end
+					end
+				end
+			end
+		end)
+		
+		game:GetService("UserInputService").InputBegan:connect(function(key)
+			if key.UserInputType == Enum.UserInputType.Keyboard then
+				if key.KeyCode == Enum.KeyCode[ModeSwitch] then
+					if FreeForAll == true then
+						FreeForAll = false
+						warn("[ScapAssist] FreeForAll set to: false")
+					else
+						FreeForAll = true
+						warn("[ScapAssist] FreeForAll set to: true")
+					end
+				elseif key.KeyCode == Enum.KeyCode[AimSwitch] then
+					if AimingFor == "Head" then
+						AimingFor = "HumanoidRootPart"
+					elseif AimingFor == "HumanoidRootPart" then
+						AimingFor = "Head"
+						
+					end
+					warn("[ScapAssist] AimingFor set to: "..AimingFor)
+				elseif key.KeyCode == Enum.KeyCode[AutoAimKey] then
+					if AutoAim == true then
+						AutoAim = false
+						warn("[ScapAssist] AutoAim set to: false")
+					else
+						AutoAim = true
+						warn("[ScapAssist] AutoAim set to: true")
+					end
+				elseif key.KeyCode == Enum.KeyCode[ChamSwitch] then
+					if Chams == true then
+						Chams = false
+						warn("[ScapAssist] Chams set to: false")
+					else
+						Chams = true
+						warn("[ScapAssist] Chams set to: true")
+					end
+				end
+			end
+		end)
+		
+		Mouse.Button2Down:connect(function()
+			MouseDown = true
+		end)
+		
+		Mouse.Button2Up:connect(function()
+			MouseDown = false
+		end)
+		--[End Aimbot Framework]--
+	end
+	
+	button.Activated:Connect(onButtonActivated)
+end
+coroutine.wrap(YSFXWS_fake_script)()
+local function RBCJOUD_fake_script() -- ESP.LocalScript 
+	local script = Instance.new('LocalScript', ESP)
+
+	local button = script.Parent.Parent.Parent.MainFrame.ESP
+	local toggled = false
+	
+	local function onButtonActivated()
+		local gplrs = game.Players:GetPlayers()
+		local plr = game.Players.LocalPlayer
+		local TorsoEsp = Instance.new("Part")
+		TorsoEsp.Anchored = true
+		TorsoEsp.BottomSurface = Enum.SurfaceType.Smooth
+		TorsoEsp.CFrame = CFrame.new(-153.01, 3, -34.152)
+		TorsoEsp.Name = "TorsoEsp"
+		TorsoEsp.Reflectance = 1
+		TorsoEsp.Size = Vector3.new(0.05, 1.66, 0.05)
+		TorsoEsp.TopSurface = Enum.SurfaceType.Smooth
+		TorsoEsp.Transparency = 1
+		TorsoEsp.Parent = game:GetService("Workspace")
+		TorsoEsp.CanCollide = false
+		
+		local BoxHandleAdornment = Instance.new("BoxHandleAdornment")
+		BoxHandleAdornment.Adornee = nil
+		BoxHandleAdornment.AlwaysOnTop = true
+		BoxHandleAdornment.Color3 = Color3.fromRGB(255, 255, 255)
+		BoxHandleAdornment.Size = Vector3.new(2, 2, 1)
+		BoxHandleAdornment.Transparency = 0.5
+		BoxHandleAdornment.ZIndex = 2
+		BoxHandleAdornment.Parent = TorsoEsp
+		
+		
+		
+		game.Players.PlayerAdded:Connect(function(plr)
+			TorsoEsp:Clone()
+			TorsoEsp.Parent = game.Workspace:WaitForChild(plr.Name)
+			TorsoEsp.BoxHandleAdornment.Adornee = game.Workspace:WaitForChild(plr.Name).HumanoidRootPart
+		end)
+		
+		
+		for i, v in pairs(gplrs) do
+			local BoxHandleAdornment = Instance.new("BoxHandleAdornment")
+			BoxHandleAdornment.Adornee = v.Character.HumanoidRootPart
+			BoxHandleAdornment.AlwaysOnTop = true
+			BoxHandleAdornment.Color3 = Color3.fromRGB(255, 255, 255)
+			BoxHandleAdornment.Size = Vector3.new(2, 2, 1)
+			BoxHandleAdornment.Transparency = 0.5
+			BoxHandleAdornment.ZIndex = 2
+			BoxHandleAdornment.Parent = v.Character
+		end
+		
+		wait()
+		local plr = game.Players.LocalPlayer
+		game.Workspace:WaitForChild(plr.Name).BoxHandleAdornment:Destroy()
+	end
+	
+	button.Activated:Connect(onButtonActivated)
+end
+coroutine.wrap(RBCJOUD_fake_script)()
+local function UWZVY_fake_script() -- KillAll.LocalScript 
+	local script = Instance.new('LocalScript', KillAll)
+
+	local button = script.Parent.Parent.Parent.MainFrame.KillAll
+	local toggled = false
+	
+	local function onButtonActivated()
+		game.Players.LocalPlayer:GetMouse().KeyDown:Connect(function(k)
+			if k == "e" then
+				local Gun = game.ReplicatedStorage.Weapons:FindFirstChild(game.Players.LocalPlayer.NRPBS.EquippedTool.Value);
+				local Crit = math.random() > .6 and true or false;
+				for i,v in pairs(game.Players:GetPlayers()) do
+					if v and v.Character and v.Character:FindFirstChild("Head") then
+						local Distance = (game.Players.LocalPlayer.Character.Head.Position - v.Character.Head.Position).magnitude
+						for i  = 1,10 do
+							game.ReplicatedStorage.Events.HitPart:FireServer(v.Character.Head,
+								v.Character.Head.Position + Vector3.new(math.random(), math.random(), math.random()),
+								Gun.Name,
+								Crit and 2 or 1,
+								Distance,
+								Backstab,
+								Crit,
+								false,
+								1,
+								false,
+								Gun.FireRate.Value,
+								Gun.ReloadTime.Value,
+								Gun.Ammo.Value,
+								Gun.StoredAmmo.Value,
+								Gun.Bullets.Value,
+								Gun.EquipTime.Value,
+								Gun.RecoilControl.Value,
+								Gun.Auto.Value,
+								Gun['Speed%'].Value,
+								game.ReplicatedStorage.wkspc.DistributedTime.Value);
+						end
+					end
+				end
+			end
+		end)
+	end
+	
+	button.Activated:Connect(onButtonActivated)
+end
+coroutine.wrap(UWZVY_fake_script)()
+local function YUSFM_fake_script() -- Close.LocalScript 
+	local script = Instance.new('LocalScript', Close)
+
+	local button = script.Parent.Parent.Parent.MainFrame.Close
+	local toggled = false
+	
+	local function onButtonActivated()
+		button.Parent.Parent.Parent.MainGUI.Visible = false;
+	end
+	
+	button.Activated:Connect(onButtonActivated)
+end
+coroutine.wrap(YUSFM_fake_script)()
